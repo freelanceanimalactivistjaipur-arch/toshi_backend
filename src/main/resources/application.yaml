@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: toshi
+
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/toshi_db
+    username: postgres
+    password: postgres
+
+
+server:
+  port: 8081
