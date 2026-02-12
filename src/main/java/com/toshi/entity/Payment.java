@@ -8,11 +8,8 @@ import org.springframework.data.relational.core.mapping.Table;
 
 
 @Table(name = "payments")
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
 public class Payment {
     @Id
     private Long id;
