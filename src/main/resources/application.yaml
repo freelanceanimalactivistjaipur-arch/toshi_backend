@@ -2,28 +2,19 @@ spring:
   application:
     name: toshi
 
-  r2dbc:
-    url: r2dbc:postgresql://localhost:5432/toshidb
-    username: postgres
-    password: root
-    # optional: specify pool settings
-    pool:
-      initial-size: 5
-      max-size: 20
-
-  # Optional: Flyway or Liquibase if you want migrations
-  flyway:
-    enabled: false
-
-razorpay:
-  key: rzp_test_Abc123456789
-  secret: 1234567890abcdef123456
+  profiles:
+    active: local   # default profile
 
 server:
   port: 8083
 
 logging:
   level:
-    root: INFO
-    org.springframework.r2dbc.connection: DEBUG
-    reactor.netty.http.server.HttpServerOperations: WARN
+    org.springframework.r2dbc: INFO
+
+razorpay:
+  key: ${RAZORPAY_KEY:}
+  secret: ${RAZORPAY_SECRET:}
+
+
+

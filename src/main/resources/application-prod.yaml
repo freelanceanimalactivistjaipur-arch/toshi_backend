@@ -1,0 +1,16 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://${DB_HOST}:${DB_PORT:5432}/${DB_NAME}  #r2dbc:postgresql://containers-us-west-123.railway.app:5432/toshi_prod_db
+    username: ${DB_USERNAME}   #postgres
+    password: ${DB_PASSWORD}   #toshipostgres
+
+  sql:
+    init:
+      mode: never
+
+server:
+  port: ${PORT:8083}
+
+razorpay:
+  key: ${RAZORPAY_KEY}
+  secret: ${RAZORPAY_SECRET}

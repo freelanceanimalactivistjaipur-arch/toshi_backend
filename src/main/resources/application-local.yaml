@@ -1,0 +1,13 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/toshidb
+    username: postgres
+    password: root
+
+  sql:
+    init:
+      mode: always
+
+razorpay:
+  key: rzp_test_xxxxxxxxxxxx
+  secret: test_secret_xxxxxxxxxxxx
