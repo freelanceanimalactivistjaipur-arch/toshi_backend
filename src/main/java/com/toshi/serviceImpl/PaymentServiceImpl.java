@@ -1,69 +1,88 @@
+
 package com.toshi.serviceImpl;
 
-
+import com.razorpay.Order;
+import com.razorpay.RazorpayClient;
+import com.razorpay.RazorpayException;
 import com.toshi.dto.PaymentRequestDto;
 import com.toshi.dto.PaymentResponseDto;
 import com.toshi.entity.Payment;
-import com.toshi.enums.PaymentMode;
 import com.toshi.enums.PaymentStatus;
 import com.toshi.repository.PaymentRepository;
 import com.toshi.service.PaymentService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.commons.codec.digest.HmacUtils;
+import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
+import reactor.core.publisher.Mono;
 
 @Service
 public class PaymentServiceImpl implements PaymentService {
 
-    private static final String OWNER_UPI = "7060532399@ikwik";
-    private static final String OWNER_NAME = "Toshi";
-    @Autowired
-    private PaymentRepository paymentRepository;
-    @Override
-    public PaymentResponseDto createQrPayment(PaymentRequestDto dto) {
-        Payment payment = new Payment();
-        payment.setFirstname(dto.getFirstname());
-        payment.setLastname(dto.getLastname());
-        payment.setEmail(dto.getEmail());
-        payment.setPhone(dto.getPhone());
-        payment.setAmount(dto.getAmount());
-        payment.setMode(PaymentMode.QR_CODE);
-        payment.setStatus(PaymentStatus.PENDING);
-        payment.setUpiId(OWNER_UPI);
-        payment = paymentRepository.save(payment);
-        // 🔥 REAL UPI QR STRING
-        String upiQrUrl =
-                "upi://pay?pa=" + OWNER_UPI +
-                        "&pn=" + URLEncoder.encode(OWNER_NAME, StandardCharsets.UTF_8) +
-                        "&am=" + payment.getAmount() +
-                        "&cu=INR";
-        PaymentResponseDto response = new PaymentResponseDto();
-        response.setPaymentId(payment.getId());
-        response.setStatus(payment.getStatus().name());
-        response.setQrUrl(upiQrUrl);
+    private final PaymentRepository paymentRepository;
 
-        return response;
+    private final RazorpayClient razorpayClient;
 
+    @Value("${razorpay.secret}")
+    private String razorpaySecret;
+
+    public PaymentServiceImpl(RazorpayClient razorpayClient, PaymentRepository paymentRepository) {
+        this.razorpayClient = razorpayClient;
+        this.paymentRepository = paymentRepository;
     }
 
-    @Override
-    public Payment scanQr(Long paymentId) {
-        Payment payment = paymentRepository.findById(paymentId)
-                .orElseThrow(() -> new RuntimeException("Payment not found"));
-
-        payment.setStatus(PaymentStatus.SUCCESS); // or FAILED based on logic
-        return paymentRepository.save(payment);
-    }
 
     @Override
-    public Payment verifyPayment(Long paymentId, String transactionId) {
-        Payment payment = paymentRepository.findById(paymentId)
-                .orElseThrow(() -> new RuntimeException("Payment not found"));
+    public Mono<PaymentResponseDto> createOrder(PaymentRequestDto dto) {
+        JSONObject options = new JSONObject();
+        options.put("amount", dto.getAmount() * 100); // paise
+        options.put("currency", "INR");
+        options.put("receipt", "txn_" + System.currentTimeMillis());
 
-        payment.setStatus(PaymentStatus.SUCCESS); // or FAILED based on logic
-        payment.setTransactionId(transactionId);
-        return paymentRepository.save(payment);
+        // Wrap blocking call in Mono
+        return Mono.fromCallable(() -> razorpayClient.orders.create(options))
+                .flatMap(order -> {
+                    Payment payment = new Payment();
+                    payment.setFirstname(dto.getFirstname());
+                    payment.setLastname(dto.getLastname());
+                    payment.setEmail(dto.getEmail());
+                    payment.setPhone(dto.getPhone());
+                    payment.setAmount(dto.getAmount());
+                    payment.setRazorpayOrderId(order.get("id"));
+                    payment.setStatus(PaymentStatus.PENDING);
+
+                    return paymentRepository.save(payment)
+                            .map(saved -> new PaymentResponseDto(
+                                    saved.getId(),
+                                    saved.getRazorpayOrderId(),
+                                    saved.getStatus().name()
+                            ));
+                });
     }
+    // Verify Payment
+    public Mono<Payment> verifyPayment(String orderId, String paymentId, String signature, String secret) {
+        return paymentRepository.findByRazorpayOrderId(orderId)
+                .switchIfEmpty(Mono.error(new RuntimeException("Payment not found")))
+                .flatMap(payment -> {
+                    String payload = orderId + "|" + paymentId;
+                    String expectedSignature = HmacUtils.hmacSha256Hex(secret, payload);
+                    if (expectedSignature.equals(signature)) {
+                        payment.setStatus(PaymentStatus.SUCCESS);
+                        payment.setRazorpayPaymentId(paymentId);
+                        payment.setRazorpaySignature(signature);
+                    } else {
+                        payment.setStatus(PaymentStatus.FAILED);
+                    }
+                    return paymentRepository.save(payment);
+                });
+    }
+
+    // Get Payment Status
+    public Mono<Payment> getPaymentStatus(Long id) {
+        return paymentRepository.findById(id)
+                .switchIfEmpty(Mono.error(new RuntimeException("Payment not found")));
+    }
+
+
+
 }

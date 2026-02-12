@@ -1,74 +1,152 @@
 package com.toshi.controller;
 
-
+import com.razorpay.RazorpayException;
 import com.toshi.dto.ApiResponse;
 import com.toshi.dto.PaymentRequestDto;
 import com.toshi.dto.PaymentResponseDto;
 import com.toshi.entity.Payment;
 import com.toshi.service.PaymentService;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.validation.Valid;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
+
 
 @RestController
 @RequestMapping("/api/payment")
 @CrossOrigin
+@Validated
+@Slf4j
 public class PaymentController {
 
-    @Autowired
-    private PaymentService paymentService;
+    private final PaymentService paymentService;
 
-    @PostMapping("/qr")
-    public Mono<ResponseEntity<ApiResponse<PaymentResponseDto>>> createQr(
-            @RequestBody PaymentRequestDto dto) {
+    @Value("${razorpay.secret}")
+    private String razorpaySecret;
 
-        return paymentService.createQrPayment(dto)
-                .map(response ->
-                        ResponseEntity.status(HttpStatus.CREATED)
-                                .body(ApiResponse.<PaymentResponseDto>builder()
-                                        .status("SUCCESS")
-                                        .message("QR payment created successfully")
-                                        .statusCode(201)
-                                        .data(response)
-                                        .build()
-                                ));
+    public PaymentController(PaymentService paymentService) {
+        this.paymentService = paymentService;
     }
 
-    @GetMapping("/scan/{paymentId}")
-    public ResponseEntity<ApiResponse<Payment>> scanQr(
-            @PathVariable Long paymentId) {
+    /**
+     * Create Razorpay Order
+     */
+    @PostMapping("/create-order")
+    public Mono<ResponseEntity<ApiResponse<PaymentResponseDto>>> createOrder(
+            @Valid @RequestBody PaymentRequestDto dto) {
 
-       return paymentService.scanQr(paymentId);
+       // log.info("Received create-order request: {}", dto);
 
-        ApiResponse<Payment> apiResponse =
-                new ApiResponse<>(
-                        "SUCCESS",
-                        "QR scanned successfully",
-                        payment,
-                        HttpStatus.OK.value()
-                );
+        return paymentService.createOrder(dto)
+                .map(resp -> ResponseEntity.status(HttpStatus.CREATED)
+                        .body(new ApiResponse<>(
+                                "SUCCESS",
+                                "Order created successfully",
+                                HttpStatus.CREATED.value(),
+                                resp
+                        )))
+                .onErrorResume(RazorpayException.class, ex -> {
 
-        return ResponseEntity.ok(apiResponse);
+
+                     //  log.error("RazorpayException: {}", ex.getMessage(), ex);
+                    return Mono.just(ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                            .body(new ApiResponse<>(
+                                    "ERROR",
+                                    ex.getMessage(),
+                                    HttpStatus.BAD_REQUEST.value(),
+                                    null
+                            )));
+                })
+                .onErrorResume(Exception.class, ex -> {
+                  //  log.error("Unhandled Exception: {}", ex.getMessage(), ex);
+                    return Mono.just(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                            .body(new ApiResponse<>(
+                                    "ERROR",
+                                    "Internal server error",
+                                    HttpStatus.INTERNAL_SERVER_ERROR.value(),
+                                    null
+                            )));
+                });
     }
 
+    /**
+     * Verify Payment
+     */
+    @PostMapping("/verify")
+    public Mono<ResponseEntity<ApiResponse<Payment>>> verifyPayment(
+            @RequestParam String orderId,
+            @RequestParam String paymentId,
+            @RequestParam String signature) {
 
-    // ✅ NEW: VERIFY PAYMENT STATUS
-    @PostMapping("/verify/{paymentId}/{transactionId}")
-    public ResponseEntity<ApiResponse<Payment>> verifyPayment(
-            @PathVariable Long paymentId, @PathVariable String transactionId) {
+       // log.info("Verifying payment: orderId={}, paymentId={}", orderId, paymentId);
 
-        Payment payment = paymentService.verifyPayment(paymentId, transactionId);
+        return paymentService.verifyPayment(orderId, paymentId, signature, razorpaySecret)
+                .map(payment -> ResponseEntity.ok(
+                        new ApiResponse<>(
+                                "SUCCESS",
+                                "Payment verified successfully",
+                                HttpStatus.OK.value(),
+                                payment
+                        )
+                ))
+                .onErrorResume(RazorpayException.class, ex -> {
+                  //  log.error("RazorpayException: {}", ex.getMessage(), ex);
+                    return Mono.just(ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                            .body(new ApiResponse<>(
+                                    "ERROR",
+                                    ex.getMessage(),
+                                    HttpStatus.BAD_REQUEST.value(),
+                                    null
+                            )));
+                })
+                .onErrorResume(Exception.class, ex -> {
+                   // log.error("Unhandled Exception: {}", ex.getMessage(), ex);
+                    return Mono.just(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                            .body(new ApiResponse<>(
+                                    "ERROR",
+                                    "Internal server error",
+                                    HttpStatus.INTERNAL_SERVER_ERROR.value(),
+                                    null
+                            )));
+                });
+    }
 
-        ApiResponse<Payment> apiResponse =
-                new ApiResponse<>(
-                        "SUCCESS",
-                        "Payment status fetched successfully",
-                        payment,
-                        HttpStatus.OK.value()
-                );
+    /**
+     * Get Payment Status
+     */
+    @GetMapping("/status/{id}")
+    public Mono<ResponseEntity<ApiResponse<Payment>>> getPaymentStatus(@PathVariable Long id) {
+      //  log.info("Fetching payment status for id={}", id);
 
-        return ResponseEntity.ok(apiResponse);
+        return paymentService.getPaymentStatus(id)
+                .map(payment -> ResponseEntity.ok(
+                        new ApiResponse<>(
+                                "SUCCESS",
+                                "Payment status fetched successfully",
+                                HttpStatus.OK.value(),
+                                payment
+                        )
+                ))
+                .switchIfEmpty(Mono.just(ResponseEntity.status(HttpStatus.NOT_FOUND)
+                        .body(new ApiResponse<>(
+                                "ERROR",
+                                "Payment not found",
+                                HttpStatus.NOT_FOUND.value(),
+                                null
+                        ))))
+                .onErrorResume(Exception.class, ex -> {
+                  //  log.error("Unhandled Exception: {}", ex.getMessage(), ex);
+                    return Mono.just(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                            .body(new ApiResponse<>(
+                                    "ERROR",
+                                    "Internal server error",
+                                    HttpStatus.INTERNAL_SERVER_ERROR.value(),
+                                    null
+                            )));
+                });
     }
 }
