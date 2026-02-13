@@ -1,9 +1,11 @@
 spring:
   application:
     name: toshi
-
   profiles:
     active: local   # default profile
+  r2dbc:
+    initialization-mode: always   # for local schema/data init
+
 
 server:
   port: 8083
@@ -13,8 +15,5 @@ logging:
     org.springframework.r2dbc: INFO
 
 razorpay:
-  key: ${RAZORPAY_KEY:}
-  secret: ${RAZORPAY_SECRET:}
-
-
-
+  key: ${RAZORPAY_KEY:rzp_test_SFbkby3DYACZHb}
+  secret: ${RAZORPAY_SECRET:uCFi4URbTpD2Z9GoTa4u9he5}

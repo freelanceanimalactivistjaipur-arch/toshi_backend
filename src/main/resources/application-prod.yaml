@@ -1,12 +1,13 @@
 spring:
   r2dbc:
-    url: r2dbc:postgresql://${DB_HOST}:${DB_PORT:5432}/${DB_NAME}  #r2dbc:postgresql://containers-us-west-123.railway.app:5432/toshi_prod_db
-    username: ${DB_USERNAME}   #postgres
-    password: ${DB_PASSWORD}   #toshipostgres
+    url: r2dbc:postgresql://${DB_HOST}:${DB_PORT:5432}/${DB_NAME}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    initialization-mode: never
 
-  sql:
-    init:
-      mode: never
+sql:
+  init:
+    mode: never
 
 server:
   port: ${PORT:8083}
