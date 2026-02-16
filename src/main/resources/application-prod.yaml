@@ -11,6 +11,7 @@ sql:
 
 server:
   port: ${PORT:8083}
+  address: 0.0.0.0
 
 razorpay:
   key: ${RAZORPAY_KEY}

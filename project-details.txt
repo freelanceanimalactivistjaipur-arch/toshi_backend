@@ -18,3 +18,9 @@ psql -h trolley.proxy.rlwy.net -p 42955 -U postgres -d railway
 
 
 
+\dt
+\d payments
+select * from payments;
+
+
+
