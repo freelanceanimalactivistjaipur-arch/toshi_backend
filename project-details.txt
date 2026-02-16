@@ -13,10 +13,8 @@ psql --version
 railway run psql
 
 psql -h localhost -p 5432 -U postgres -d toshi_prod_db
-
-
-psql -h containers-us-west-123.railway.app -p 5432 -U postgres -d toshi_prod_db
-
+psql postgresql://postgres:MEXxHiAhLNdtZhVfXZFppotvDhWJpUGy@trolley.proxy.rlwy.net:42955/railway
+psql -h trolley.proxy.rlwy.net -p 42955 -U postgres -d railway
 
 
 
