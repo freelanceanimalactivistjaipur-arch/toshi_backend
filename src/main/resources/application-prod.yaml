@@ -1,7 +1,7 @@
 spring:
   r2dbc:
     url: r2dbc:postgresql://${DB_HOST}:${DB_PORT:5432}/${DB_NAME}
-    username: ${DB_USERNAME}
+    username: ${DB_USER}
     password: ${DB_PASSWORD}
     initialization-mode: never
 

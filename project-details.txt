@@ -1,3 +1,22 @@
 java -jar target/toshi-0.0.1-SNAPSHOT.jar --spring.profiles.active=local
 java -jar target/toshi-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
  mvn clean install -DskipTests
+
+
+//railway
+npm install -g @railway/cli
+railway --version
+railway login --browserless
+railway link
+railway variables
+psql --version
+railway run psql
+
+psql -h localhost -p 5432 -U postgres -d toshi_prod_db
+
+
+psql -h containers-us-west-123.railway.app -p 5432 -U postgres -d toshi_prod_db
+
+
+
+
