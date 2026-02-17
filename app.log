@@ -1,0 +1,1111 @@
+2026-02-17T12:42:55.648+05:30  INFO 12948 --- [toshi] [main] com.toshi.ToshiApplication               : Starting ToshiApplication using Java 21.0.9 with PID 12948 (D:\gllfl_projects\toshi\target\classes started by sunde in D:\gllfl_projects\toshi)
+2026-02-17T12:42:55.669+05:30 DEBUG 12948 --- [toshi] [main] com.toshi.ToshiApplication               : Running with Spring Boot v4.0.2, Spring v7.0.3
+2026-02-17T12:42:55.671+05:30  INFO 12948 --- [toshi] [main] com.toshi.ToshiApplication               : The following 1 profile is active: "local"
+2026-02-17T12:42:55.674+05:30 DEBUG 12948 --- [toshi] [main] o.s.boot.SpringApplication               : Loading source class com.toshi.ToshiApplication
+2026-02-17T12:42:55.901+05:30 DEBUG 12948 --- [toshi] [main] onfigReactiveWebServerApplicationContext : Refreshing org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845
+2026-02-17T12:42:55.975+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2026-02-17T12:42:56.023+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2026-02-17T12:42:56.137+05:30 DEBUG 12948 --- [toshi] [background-preinit] org.jboss.logging                        : Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2026-02-17T12:42:56.171+05:30 DEBUG 12948 --- [toshi] [background-preinit] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2026-02-17T12:42:56.174+05:30 DEBUG 12948 --- [toshi] [background-preinit] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2026-02-17T12:42:56.175+05:30 DEBUG 12948 --- [toshi] [background-preinit] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2026-02-17T12:42:56.175+05:30 DEBUG 12948 --- [toshi] [background-preinit] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2026-02-17T12:42:56.189+05:30 DEBUG 12948 --- [toshi] [background-preinit] o.h.v.i.e.resolver.TraversableResolvers  : Cannot find jakarta.persistence.Persistence on classpath. Assuming non Jakarta Persistence environment. All properties will per default be traversable.
+2026-02-17T12:42:56.272+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [D:\gllfl_projects\toshi\target\classes\com\toshi\config\RazorpayConfig.class]
+2026-02-17T12:42:56.274+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [D:\gllfl_projects\toshi\target\classes\com\toshi\config\SecurityConfig.class]
+2026-02-17T12:42:56.314+05:30 DEBUG 12948 --- [toshi] [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2026-02-17T12:42:56.318+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [D:\gllfl_projects\toshi\target\classes\com\toshi\controller\PaymentController.class]
+2026-02-17T12:42:56.336+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [D:\gllfl_projects\toshi\target\classes\com\toshi\exception\GlobalExceptionHandler.class]
+2026-02-17T12:42:56.339+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.a.ClassPathBeanDefinitionScanner   : Ignored because not a concrete top-level class: file [D:\gllfl_projects\toshi\target\classes\com\toshi\repository\PaymentRepository.class]
+2026-02-17T12:42:56.341+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [D:\gllfl_projects\toshi\target\classes\com\toshi\serviceImpl\PaymentServiceImpl.class]
+2026-02-17T12:42:56.869+05:30 DEBUG 12948 --- [toshi] [background-preinit] .i.e.ValidatorFactoryConfigurationHelper : HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2026-02-17T12:42:56.891+05:30 DEBUG 12948 --- [toshi] [background-preinit] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2026-02-17T12:42:56.892+05:30 DEBUG 12948 --- [toshi] [background-preinit] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2026-02-17T12:42:56.892+05:30 DEBUG 12948 --- [toshi] [background-preinit] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2026-02-17T12:42:56.893+05:30 DEBUG 12948 --- [toshi] [background-preinit] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2026-02-17T12:42:56.893+05:30 DEBUG 12948 --- [toshi] [background-preinit] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2026-02-17T12:42:57.478+05:30  INFO 12948 --- [toshi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2026-02-17T12:42:57.497+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2026-02-17T12:42:57.531+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.toshi'. Automatic @Repository and @Entity scanning is enabled.
+2026-02-17T12:42:57.532+05:30 DEBUG 12948 --- [toshi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for R2DBC repositories in packages com.toshi.
+2026-02-17T12:42:57.546+05:30 DEBUG 12948 --- [toshi] [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [D:\gllfl_projects\toshi\target\classes\com\toshi\repository\PaymentRepository.class]
+2026-02-17T12:42:57.703+05:30 DEBUG 12948 --- [toshi] [main] ssPathScanningCandidateComponentProvider : Identified candidate component class: file [D:\gllfl_projects\toshi\target\classes\com\toshi\serviceImpl\PaymentServiceImpl.class]
+2026-02-17T12:42:57.726+05:30  INFO 12948 --- [toshi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 191 ms. Found 1 R2DBC repository interface.
+2026-02-17T12:42:58.052+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2026-02-17T12:42:58.068+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
+2026-02-17T12:42:58.129+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2026-02-17T12:42:58.135+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'forceAutoProxyCreatorToUseClassProxying'
+2026-02-17T12:42:58.137+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'bootstrapExecutorAliasPostProcessor'
+2026-02-17T12:42:58.139+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'conversionServicePostProcessor'
+2026-02-17T12:42:58.196+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2026-02-17T12:42:58.197+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2026-02-17T12:42:58.201+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2026-02-17T12:42:58.203+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2026-02-17T12:42:58.208+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2026-02-17T12:42:58.208+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+2026-02-17T12:42:58.220+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'methodValidationPostProcessor'
+2026-02-17T12:42:58.233+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'methodValidationPostProcessor' via factory method to bean named 'environment'
+2026-02-17T12:42:58.245+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
+2026-02-17T12:42:58.274+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.aop.framework.autoproxy.defaultProxyConfig'
+2026-02-17T12:42:58.309+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+2026-02-17T12:42:58.310+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+2026-02-17T12:42:58.315+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2026-02-17T12:42:58.329+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
+2026-02-17T12:42:58.337+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'nettyReactiveWebServerFactory'
+2026-02-17T12:42:58.338+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.reactor.netty.autoconfigure.NettyReactiveWebServerAutoConfiguration'
+2026-02-17T12:42:58.341+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2026-02-17T12:42:58.341+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2026-02-17T12:42:58.359+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'transactionAttributeSource'
+2026-02-17T12:42:58.373+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'transactionInterceptor'
+2026-02-17T12:42:58.373+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+2026-02-17T12:42:58.380+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+2026-02-17T12:42:58.381+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+2026-02-17T12:42:58.387+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'reactorResourceFactory'
+2026-02-17T12:42:58.388+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.reactor.netty.autoconfigure.ReactorNettyConfigurations$ReactorResourceFactoryConfiguration'
+2026-02-17T12:42:58.388+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.reactor.netty-org.springframework.boot.reactor.netty.autoconfigure.ReactorNettyProperties'
+2026-02-17T12:42:58.392+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+2026-02-17T12:42:58.405+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'reactorResourceFactory' via factory method to bean named 'spring.reactor.netty-org.springframework.boot.reactor.netty.autoconfigure.ReactorNettyProperties'
+2026-02-17T12:42:58.410+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'nettyReactiveWebServerFactory' via factory method to bean named 'reactorResourceFactory'
+2026-02-17T12:42:58.420+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'reactiveWebServerFactoryCustomizer'
+2026-02-17T12:42:58.422+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.web.server.autoconfigure.reactive.ReactiveWebServerConfiguration'
+2026-02-17T12:42:58.423+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'server-org.springframework.boot.web.server.autoconfigure.ServerProperties'
+2026-02-17T12:42:58.454+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'reactiveWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.web.server.autoconfigure.ServerProperties'
+2026-02-17T12:42:58.456+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'sslBundleRegistry'
+2026-02-17T12:42:58.457+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration'
+2026-02-17T12:42:58.458+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties'
+2026-02-17T12:42:58.460+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration' via constructor to bean named 'org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845'
+2026-02-17T12:42:58.461+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration' via constructor to bean named 'spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties'
+2026-02-17T12:42:58.469+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'sslPropertiesSslBundleRegistrar'
+2026-02-17T12:42:58.469+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'fileWatcher'
+2026-02-17T12:42:58.472+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'sslPropertiesSslBundleRegistrar' via factory method to bean named 'fileWatcher'
+2026-02-17T12:42:58.486+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'nettyWebServerFactoryCustomizer'
+2026-02-17T12:42:58.489+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'server.netty-org.springframework.boot.reactor.netty.autoconfigure.NettyServerProperties'
+2026-02-17T12:42:58.493+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'nettyWebServerFactoryCustomizer' via factory method to bean named 'environment'
+2026-02-17T12:42:58.494+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'nettyWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.web.server.autoconfigure.ServerProperties'
+2026-02-17T12:42:58.494+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'nettyWebServerFactoryCustomizer' via factory method to bean named 'server.netty-org.springframework.boot.reactor.netty.autoconfigure.NettyServerProperties'
+2026-02-17T12:42:58.571+05:30 DEBUG 12948 --- [toshi] [main] reactor.util.Loggers                     : Using Slf4j logging framework
+2026-02-17T12:42:58.610+05:30 DEBUG 12948 --- [toshi] [main] i.n.u.i.logging.InternalLoggerFactory    : Using SLF4J as the default logging framework
+2026-02-17T12:42:58.611+05:30 DEBUG 12948 --- [toshi] [main] i.n.u.internal.InternalThreadLocalMap    : -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2026-02-17T12:42:58.611+05:30 DEBUG 12948 --- [toshi] [main] i.n.u.internal.InternalThreadLocalMap    : -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2026-02-17T12:42:58.638+05:30 DEBUG 12948 --- [toshi] [main] io.netty.util.ResourceLeakDetector       : -Dio.netty.leakDetection.level: simple
+2026-02-17T12:42:58.638+05:30 DEBUG 12948 --- [toshi] [main] io.netty.util.ResourceLeakDetector       : -Dio.netty.leakDetection.targetRecords: 4
+2026-02-17T12:42:58.646+05:30 DEBUG 12948 --- [toshi] [main] i.n.util.internal.PlatformDependent0     : Java version: 21
+2026-02-17T12:42:58.647+05:30 DEBUG 12948 --- [toshi] [main] i.n.util.internal.PlatformDependent0     : -Dio.netty.noUnsafe: false
+2026-02-17T12:42:58.649+05:30 DEBUG 12948 --- [toshi] [main] i.n.util.internal.PlatformDependent0     : sun.misc.Unsafe.theUnsafe: available
+2026-02-17T12:42:58.651+05:30 DEBUG 12948 --- [toshi] [main] i.n.util.internal.PlatformDependent0     : sun.misc.Unsafe base methods: all available
+2026-02-17T12:42:58.652+05:30 DEBUG 12948 --- [toshi] [main] i.n.util.internal.PlatformDependent0     : java.nio.Buffer.address: available
+2026-02-17T12:42:58.653+05:30 DEBUG 12948 --- [toshi] [main] i.n.util.internal.PlatformDependent0     : direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2026-02-17T12:42:58.654+05:30 DEBUG 12948 --- [toshi] [main] i.n.util.internal.PlatformDependent0     : java.nio.Bits.unaligned: available, true
+2026-02-17T12:42:58.655+05:30 DEBUG 12948 --- [toshi] [main] i.n.util.internal.PlatformDependent0     : jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: symbolic reference class is not accessible: class jdk.internal.misc.Unsafe, from class io.netty.util.internal.PlatformDependent0 (unnamed module @3c9d0b9d)
+2026-02-17T12:42:58.656+05:30 DEBUG 12948 --- [toshi] [main] i.n.util.internal.PlatformDependent0     : java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2026-02-17T12:42:58.657+05:30 DEBUG 12948 --- [toshi] [main] i.netty.util.internal.PlatformDependent  : sun.misc.Unsafe: available
+2026-02-17T12:42:58.657+05:30 DEBUG 12948 --- [toshi] [main] i.netty.util.internal.PlatformDependent  : -Dio.netty.tmpdir: C:\Users\sunde\AppData\Local\Temp (java.io.tmpdir)
+2026-02-17T12:42:58.657+05:30 DEBUG 12948 --- [toshi] [main] i.netty.util.internal.PlatformDependent  : -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2026-02-17T12:42:58.658+05:30 DEBUG 12948 --- [toshi] [main] i.netty.util.internal.PlatformDependent  : Platform: Windows
+2026-02-17T12:42:58.659+05:30 DEBUG 12948 --- [toshi] [main] i.netty.util.internal.PlatformDependent  : -Dio.netty.maxDirectMemory: -1 bytes
+2026-02-17T12:42:58.660+05:30 DEBUG 12948 --- [toshi] [main] io.netty.util.internal.CleanerJava9      : java.nio.ByteBuffer.cleaner(): available
+2026-02-17T12:42:58.661+05:30 DEBUG 12948 --- [toshi] [main] i.netty.util.internal.PlatformDependent  : -Dio.netty.noPreferDirect: false
+2026-02-17T12:42:58.666+05:30 DEBUG 12948 --- [toshi] [main] i.netty.util.internal.PlatformDependent  : -Dio.netty.jfr.enabled: true
+2026-02-17T12:42:58.753+05:30 DEBUG 12948 --- [toshi] [main] i.n.util.concurrent.GlobalEventExecutor  : -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2026-02-17T12:42:58.766+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'applicationTaskExecutor'
+2026-02-17T12:42:58.767+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorConfiguration'
+2026-02-17T12:42:58.771+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'threadPoolTaskExecutorBuilder'
+2026-02-17T12:42:58.772+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$ThreadPoolTaskExecutorBuilderConfiguration'
+2026-02-17T12:42:58.776+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2026-02-17T12:42:58.782+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'threadPoolTaskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2026-02-17T12:42:58.797+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'threadPoolTaskExecutorBuilder'
+2026-02-17T12:42:58.817+05:30 DEBUG 12948 --- [toshi] [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2026-02-17T12:42:58.823+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'toshiApplication'
+2026-02-17T12:42:58.825+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'razorpayConfig'
+2026-02-17T12:42:58.832+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'razorpay.key' in PropertySource 'environmentProperties' with value of type String
+2026-02-17T12:42:58.837+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'razorpay.secret' in PropertySource 'environmentProperties' with value of type String
+2026-02-17T12:42:58.841+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'securityConfig'
+2026-02-17T12:42:58.843+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'paymentController'
+2026-02-17T12:42:58.856+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'paymentServiceImpl'
+2026-02-17T12:42:58.875+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'razorpayClient'
+2026-02-17T12:42:59.081+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:57:0a:11:97:42:c4:e3:cc, Subject:CN=Actalis Authentication Root CA, O=Actalis S.p.A./03358520967, L=Milan, C=IT, Issuer:CN=Actalis Authentication Root CA, O=Actalis S.p.A./03358520967, L=Milan, C=IT, Key type:RSA, Length:4096, Cert Id:1729119956, Valid from:22/09/11, 4:52 pm, Valid until:22/09/30, 4:52 pm
+2026-02-17T12:42:59.087+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:01, Subject:CN=AddTrust External CA Root, OU=AddTrust External TTP Network, O=AddTrust AB, C=SE, Issuer:CN=AddTrust External CA Root, OU=AddTrust External TTP Network, O=AddTrust AB, C=SE, Key type:RSA, Length:2048, Cert Id:3968614624, Valid from:30/05/00, 4:18 pm, Valid until:30/05/20, 4:18 pm
+2026-02-17T12:42:59.096+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:01, Subject:CN=AddTrust Qualified CA Root, OU=AddTrust TTP Network, O=AddTrust AB, C=SE, Issuer:CN=AddTrust Qualified CA Root, OU=AddTrust TTP Network, O=AddTrust AB, C=SE, Key type:RSA, Length:2048, Cert Id:607365522, Valid from:30/05/00, 4:14 pm, Valid until:30/05/20, 4:14 pm
+2026-02-17T12:42:59.103+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:06:6c:9f:cf:99:bf:8c:0a:39:e2:f0:78:8a:43:e6:96:36:5b:ca, Subject:CN=Amazon Root CA 1, O=Amazon, C=US, Issuer:CN=Amazon Root CA 1, O=Amazon, C=US, Key type:RSA, Length:2048, Cert Id:2822522334, Valid from:26/05/15, 5:30 am, Valid until:17/01/38, 5:30 am
+2026-02-17T12:42:59.107+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:06:6c:9f:d2:96:35:86:9f:0a:0f:e5:86:78:f8:5b:26:bb:8a:37, Subject:CN=Amazon Root CA 2, O=Amazon, C=US, Issuer:CN=Amazon Root CA 2, O=Amazon, C=US, Key type:RSA, Length:4096, Cert Id:2528834908, Valid from:26/05/15, 5:30 am, Valid until:26/05/40, 5:30 am
+2026-02-17T12:42:59.113+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withECDSA, Serial:06:6c:9f:d5:74:97:36:66:3f:3b:0b:9a:d9:e8:9e:76:03:f2:4a, Subject:CN=Amazon Root CA 3, O=Amazon, C=US, Issuer:CN=Amazon Root CA 3, O=Amazon, C=US, Key type:EC, Length:256, Cert Id:2732679773, Valid from:26/05/15, 5:30 am, Valid until:26/05/40, 5:30 am
+2026-02-17T12:42:59.114+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:06:6c:9f:d7:c1:bb:10:4c:29:43:e5:71:7b:7b:2c:c8:1a:c1:0e, Subject:CN=Amazon Root CA 4, O=Amazon, C=US, Issuer:CN=Amazon Root CA 4, O=Amazon, C=US, Key type:EC, Length:384, Cert Id:2640694783, Valid from:26/05/15, 5:30 am, Valid until:26/05/40, 5:30 am
+2026-02-17T12:42:59.115+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=Buypass Class 2 Root CA, O=Buypass AS-983163327, C=NO, Issuer:CN=Buypass Class 2 Root CA, O=Buypass AS-983163327, C=NO, Key type:RSA, Length:4096, Cert Id:969960563, Valid from:26/10/10, 2:08 pm, Valid until:26/10/40, 2:08 pm
+2026-02-17T12:42:59.117+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=Buypass Class 3 Root CA, O=Buypass AS-983163327, C=NO, Issuer:CN=Buypass Class 3 Root CA, O=Buypass AS-983163327, C=NO, Key type:RSA, Length:4096, Cert Id:1264269967, Valid from:26/10/10, 1:58 pm, Valid until:26/10/40, 1:58 pm
+2026-02-17T12:42:59.121+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:00:a3:da:42:7e:a4:b1:ae:da, Subject:CN=Chambers of Commerce Root - 2008, O=AC Camerfirma S.A., SERIALNUMBER=A82743287, L=Madrid (see current address at www.camerfirma.com/address), C=EU, Issuer:CN=Chambers of Commerce Root - 2008, O=AC Camerfirma S.A., SERIALNUMBER=A82743287, L=Madrid (see current address at www.camerfirma.com/address), C=EU, Key type:RSA, Length:4096, Cert Id:4266703372, Valid from:01/08/08, 5:59 pm, Valid until:31/07/38, 5:59 pm
+2026-02-17T12:42:59.123+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:06:25:33:b1:47:03:33:27:5c:f9:8d:9a:b9:bf:cc:f8, Subject:CN=Certainly Root E1, O=Certainly, C=US, Issuer:CN=Certainly Root E1, O=Certainly, C=US, Key type:EC, Length:384, Cert Id:792571453, Valid from:01/04/21, 5:30 am, Valid until:01/04/46, 5:30 am
+2026-02-17T12:42:59.124+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:00:8e:0f:f9:4b:90:71:68:65:33:54:f4:d4:44:39:b7:e0, Subject:CN=Certainly Root R1, O=Certainly, C=US, Issuer:CN=Certainly Root R1, O=Certainly, C=US, Key type:RSA, Length:4096, Cert Id:2255958535, Valid from:01/04/21, 5:30 am, Valid until:01/04/46, 5:30 am
+2026-02-17T12:42:59.126+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:00:fe:dc:e3:01:0f:c9:48:ff, Subject:CN=Certigna, O=Dhimyotis, C=FR, Issuer:CN=Certigna, O=Dhimyotis, C=FR, Key type:RSA, Length:2048, Cert Id:3506875840, Valid from:29/06/07, 8:43 pm, Valid until:29/06/27, 8:43 pm
+2026-02-17T12:42:59.128+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:00:ca:e9:1b:89:f1:55:03:0d:a3:e6:41:6d:c4:e3:a6:e1, Subject:CN=Certigna Root CA, OU=0002 48146308100036, O=Dhimyotis, C=FR, Issuer:CN=Certigna Root CA, OU=0002 48146308100036, O=Dhimyotis, C=FR, Key type:RSA, Length:4096, Cert Id:356684591, Valid from:01/10/13, 2:02 pm, Valid until:01/10/33, 2:02 pm
+2026-02-17T12:42:59.129+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:01:00:20, Subject:CN=Certum CA, O=Unizeto Sp. z o.o., C=PL, Issuer:CN=Certum CA, O=Unizeto Sp. z o.o., C=PL, Key type:RSA, Length:2048, Cert Id:3550516030, Valid from:11/06/02, 4:16 pm, Valid until:11/06/27, 4:16 pm
+2026-02-17T12:42:59.131+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:04:44:c0, Subject:CN=Certum Trusted Network CA, OU=Certum Certification Authority, O=Unizeto Technologies S.A., C=PL, Issuer:CN=Certum Trusted Network CA, OU=Certum Certification Authority, O=Unizeto Technologies S.A., C=PL, Key type:RSA, Length:2048, Cert Id:2014002193, Valid from:22/10/08, 5:37 pm, Valid until:31/12/29, 5:37 pm
+2026-02-17T12:42:59.132+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:15:c8:bd:65:47:5c:af:b8:97:00:5e:e4:06:d2:bc:9d, Subject:OU=ePKI Root Certification Authority, O="Chunghwa Telecom Co., Ltd.", C=TW, Issuer:OU=ePKI Root Certification Authority, O="Chunghwa Telecom Co., Ltd.", C=TW, Key type:RSA, Length:4096, Cert Id:3632331159, Valid from:20/12/04, 8:01 am, Valid until:20/12/34, 8:01 am
+2026-02-17T12:42:59.133+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:01, Subject:CN=AAA Certificate Services, O=Comodo CA Limited, L=Salford, ST=Greater Manchester, C=GB, Issuer:CN=AAA Certificate Services, O=Comodo CA Limited, L=Salford, ST=Greater Manchester, C=GB, Key type:RSA, Length:2048, Cert Id:3097386402, Valid from:01/01/04, 5:30 am, Valid until:01/01/29, 5:29 am
+2026-02-17T12:42:59.134+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:1f:47:af:aa:62:00:70:50:54:4c:01:9e:9b:63:99:2a, Subject:CN=COMODO ECC Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB, Issuer:CN=COMODO ECC Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB, Key type:EC, Length:384, Cert Id:1146488932, Valid from:06/03/08, 5:30 am, Valid until:19/01/38, 5:29 am
+2026-02-17T12:42:59.135+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:4c:aa:f9:ca:db:63:6f:e0:1f:f7:4e:d8:5b:03:86:9d, Subject:CN=COMODO RSA Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB, Issuer:CN=COMODO RSA Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB, Key type:RSA, Length:4096, Cert Id:1769425049, Valid from:19/01/10, 5:30 am, Valid until:19/01/38, 5:29 am
+2026-02-17T12:42:59.137+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:0b:93:1c:3a:d6:39:67:ea:67:23:bf:c3:af:9a:f4:4b, Subject:CN=DigiCert Assured ID Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Assured ID Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:3909568913, Valid from:01/08/13, 5:30 pm, Valid until:15/01/38, 5:30 pm
+2026-02-17T12:42:59.138+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:0b:a1:5a:fa:1d:df:a0:b5:49:44:af:cd:24:a0:6c:ec, Subject:CN=DigiCert Assured ID Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Assured ID Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:EC, Length:384, Cert Id:3649430051, Valid from:01/08/13, 5:30 pm, Valid until:15/01/38, 5:30 pm
+2026-02-17T12:42:59.139+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:0c:e7:e0:e5:17:d8:46:fe:8f:e5:60:fc:1b:f0:30:39, Subject:CN=DigiCert Assured ID Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Assured ID Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:3434562768, Valid from:10/11/06, 5:30 am, Valid until:10/11/31, 5:30 am
+2026-02-17T12:42:59.140+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:03:69:8f:e7:12:d5:19:f3:ce:d0:fd:b7:b1:64:30:11, Subject:CN=DigiCert CS ECC P384 Root G5, O="DigiCert, Inc.", C=US, Issuer:CN=DigiCert CS ECC P384 Root G5, O="DigiCert, Inc.", C=US, Key type:EC, Length:384, Cert Id:381797637, Valid from:15/01/21, 5:30 am, Valid until:15/01/46, 5:29 am
+2026-02-17T12:42:59.142+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:06:ce:e1:31:be:6d:55:c8:07:f7:c0:c7:fb:44:e6:20, Subject:CN=DigiCert CS RSA4096 Root G5, O="DigiCert, Inc.", C=US, Issuer:CN=DigiCert CS RSA4096 Root G5, O="DigiCert, Inc.", C=US, Key type:RSA, Length:4096, Cert Id:1193514382, Valid from:15/01/21, 5:30 am, Valid until:15/01/46, 5:29 am
+2026-02-17T12:42:59.143+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:08:3b:e0:56:90:42:46:b1:a1:75:6a:c9:59:91:c7:4a, Subject:CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:1341898239, Valid from:10/11/06, 5:30 am, Valid until:10/11/31, 5:30 am
+2026-02-17T12:42:59.145+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:03:3a:f1:e6:a7:11:a9:a0:bb:28:64:b1:1d:09:fa:e5, Subject:CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:1136084297, Valid from:01/08/13, 5:30 pm, Valid until:15/01/38, 5:30 pm
+2026-02-17T12:42:59.147+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:05:55:56:bc:f2:5e:a4:35:35:c3:a4:0f:d5:ab:45:72, Subject:CN=DigiCert Global Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Global Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:EC, Length:384, Cert Id:3498998753, Valid from:01/08/13, 5:30 pm, Valid until:15/01/38, 5:30 pm
+2026-02-17T12:42:59.149+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:02:ac:5c:26:6a:0b:40:9b:8f:0b:79:f2:ae:46:25:77, Subject:CN=DigiCert High Assurance EV Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert High Assurance EV Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:2884286942, Valid from:10/11/06, 5:30 am, Valid until:10/11/31, 5:30 am
+2026-02-17T12:42:59.150+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:09:e0:93:65:ac:f7:d9:c8:b9:3e:1c:0b:04:2a:2e:f3, Subject:CN=DigiCert TLS ECC P384 Root G5, O="DigiCert, Inc.", C=US, Issuer:CN=DigiCert TLS ECC P384 Root G5, O="DigiCert, Inc.", C=US, Key type:EC, Length:384, Cert Id:3940772018, Valid from:15/01/21, 5:30 am, Valid until:15/01/46, 5:29 am
+2026-02-17T12:42:59.151+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:08:f9:b4:78:a8:fa:7e:da:6a:33:37:89:de:7c:cf:8a, Subject:CN=DigiCert TLS RSA4096 Root G5, O="DigiCert, Inc.", C=US, Issuer:CN=DigiCert TLS RSA4096 Root G5, O="DigiCert, Inc.", C=US, Key type:RSA, Length:4096, Cert Id:165956757, Valid from:15/01/21, 5:30 am, Valid until:15/01/46, 5:29 am
+2026-02-17T12:42:59.152+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:05:9b:1b:57:9e:8e:21:32:e2:39:07:bd:a7:77:75:5c, Subject:CN=DigiCert Trusted Root G4, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Trusted Root G4, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:4096, Cert Id:1057369358, Valid from:01/08/13, 5:30 pm, Valid until:15/01/38, 5:30 pm
+2026-02-17T12:42:59.154+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:09:83:f3, Subject:CN=D-TRUST Root Class 3 CA 2 2009, O=D-Trust GmbH, C=DE, Issuer:CN=D-TRUST Root Class 3 CA 2 2009, O=D-Trust GmbH, C=DE, Key type:RSA, Length:2048, Cert Id:1430153102, Valid from:05/11/09, 2:05 pm, Valid until:05/11/29, 2:05 pm
+2026-02-17T12:42:59.155+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:09:83:f4, Subject:CN=D-TRUST Root Class 3 CA 2 EV 2009, O=D-Trust GmbH, C=DE, Issuer:CN=D-TRUST Root Class 3 CA 2 EV 2009, O=D-Trust GmbH, C=DE, Key type:RSA, Length:2048, Cert Id:971313728, Valid from:05/11/09, 2:20 pm, Valid until:05/11/29, 2:20 pm
+2026-02-17T12:42:59.156+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:3c:f6:07:a9:68:70:0e:da:8b:84, Subject:CN=emSign ECC Root CA - G3, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Issuer:CN=emSign ECC Root CA - G3, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Key type:EC, Length:384, Cert Id:3832035707, Valid from:19/02/18, 12:00 am, Valid until:19/02/43, 12:00 am
+2026-02-17T12:42:59.156+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:31:f5:e4:62:0c:6c:58:ed:d6:d8, Subject:CN=emSign Root CA - G1, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Issuer:CN=emSign Root CA - G1, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Key type:RSA, Length:2048, Cert Id:392709196, Valid from:19/02/18, 12:00 am, Valid until:19/02/43, 12:00 am
+2026-02-17T12:42:59.158+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:00:86:4d:bf:0f:e3:5e:d7:7d:8e:d8, Subject:CN=emSign Root CA - G2, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Issuer:CN=emSign Root CA - G2, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Key type:RSA, Length:4096, Cert Id:3373940126, Valid from:19/02/18, 12:00 am, Valid until:19/02/43, 12:00 am
+2026-02-17T12:42:59.159+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:38:63:de:f8, Subject:CN=Entrust.net Certification Authority (2048), OU=(c) 1999 Entrust.net Limited, OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.), O=Entrust.net, Issuer:CN=Entrust.net Certification Authority (2048), OU=(c) 1999 Entrust.net Limited, OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.), O=Entrust.net, Key type:RSA, Length:2048, Cert Id:3966431214, Valid from:24/12/99, 11:20 pm, Valid until:24/07/29, 7:45 pm
+2026-02-17T12:42:59.162+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:45:6b:50:54, Subject:CN=Entrust Root Certification Authority, OU="(c) 2006 Entrust, Inc.", OU=www.entrust.net/CPS is incorporated by reference, O="Entrust, Inc.", C=US, Issuer:CN=Entrust Root Certification Authority, OU="(c) 2006 Entrust, Inc.", OU=www.entrust.net/CPS is incorporated by reference, O="Entrust, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:3033563200, Valid from:28/11/06, 1:53 am, Valid until:28/11/26, 2:23 am
+2026-02-17T12:42:59.163+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:00:a6:8b:79:29:00:00:00:00:50:d0:91:f9, Subject:CN=Entrust Root Certification Authority - EC1, OU="(c) 2012 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Issuer:CN=Entrust Root Certification Authority - EC1, OU="(c) 2012 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Key type:EC, Length:384, Cert Id:924514073, Valid from:18/12/12, 8:55 pm, Valid until:18/12/37, 9:25 pm
+2026-02-17T12:42:59.165+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:4a:53:8c:28, Subject:CN=Entrust Root Certification Authority - G2, OU="(c) 2009 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Issuer:CN=Entrust Root Certification Authority - G2, OU="(c) 2009 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:1936920337, Valid from:07/07/09, 10:55 pm, Valid until:07/12/30, 11:25 pm
+2026-02-17T12:42:59.166+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:00:d9:b5:43:7f:af:a9:39:0f:00:00:00:00:55:65:ad:58, Subject:CN=Entrust Root Certification Authority - G4, OU="(c) 2015 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Issuer:CN=Entrust Root Certification Authority - G4, OU="(c) 2015 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Key type:RSA, Length:4096, Cert Id:1368037548, Valid from:27/05/15, 4:41 pm, Valid until:27/12/37, 5:11 pm
+2026-02-17T12:42:59.167+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:02:34:56, Subject:CN=GeoTrust Global CA, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Global CA, O=GeoTrust Inc., C=US, Key type:RSA, Length:2048, Cert Id:2266349922, Valid from:21/05/02, 9:30 am, Valid until:21/05/22, 9:30 am
+2026-02-17T12:42:59.168+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:18:ac:b5:6a:fd:69:b6:15:3a:63:6c:af:da:fa:c4:a1, Subject:CN=GeoTrust Primary Certification Authority, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Primary Certification Authority, O=GeoTrust Inc., C=US, Key type:RSA, Length:2048, Cert Id:3329622139, Valid from:27/11/06, 5:30 am, Valid until:17/07/36, 5:29 am
+2026-02-17T12:42:59.171+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:3c:b2:f4:48:0a:00:e2:fe:eb:24:3b:5e:60:3e:c3:6b, Subject:CN=GeoTrust Primary Certification Authority - G2, OU=(c) 2007 GeoTrust Inc. - For authorized use only, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Primary Certification Authority - G2, OU=(c) 2007 GeoTrust Inc. - For authorized use only, O=GeoTrust Inc., C=US, Key type:EC, Length:384, Cert Id:3180663474, Valid from:05/11/07, 5:30 am, Valid until:19/01/38, 5:29 am
+2026-02-17T12:42:59.171+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:15:ac:6e:94:19:b2:79:4b:41:f6:27:a9:c3:18:0f:1f, Subject:CN=GeoTrust Primary Certification Authority - G3, OU=(c) 2008 GeoTrust Inc. - For authorized use only, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Primary Certification Authority - G3, OU=(c) 2008 GeoTrust Inc. - For authorized use only, O=GeoTrust Inc., C=US, Key type:RSA, Length:2048, Cert Id:2964813538, Valid from:02/04/08, 5:30 am, Valid until:02/12/37, 5:29 am
+2026-02-17T12:42:59.172+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:01, Subject:CN=GeoTrust Universal CA, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Universal CA, O=GeoTrust Inc., C=US, Key type:RSA, Length:4096, Cert Id:313566089, Valid from:04/03/04, 10:30 am, Valid until:04/03/29, 10:30 am
+2026-02-17T12:42:59.173+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:04:00:00:00:00:01:15:4b:5a:c3:94, Subject:CN=GlobalSign Root CA, OU=Root CA, O=GlobalSign nv-sa, C=BE, Issuer:CN=GlobalSign Root CA, OU=Root CA, O=GlobalSign nv-sa, C=BE, Key type:RSA, Length:2048, Cert Id:536948034, Valid from:01/09/98, 5:30 pm, Valid until:28/01/28, 5:30 pm
+2026-02-17T12:42:59.175+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:11:d2:bb:ba:33:6e:d4:bc:e6:24:68:c5:0d:84:1d:98:e8:43, Subject:CN=GlobalSign Root E46, O=GlobalSign nv-sa, C=BE, Issuer:CN=GlobalSign Root E46, O=GlobalSign nv-sa, C=BE, Key type:EC, Length:384, Cert Id:3405603905, Valid from:20/03/19, 5:30 am, Valid until:20/03/46, 5:30 am
+2026-02-17T12:42:59.176+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withECDSA, Serial:2a:38:a4:1c:96:0a:04:de:42:b2:28:a5:0b:e8:34:98:02, Subject:CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R4, Issuer:CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R4, Key type:EC, Length:256, Cert Id:2371693751, Valid from:13/11/12, 5:30 am, Valid until:19/01/38, 8:44 am
+2026-02-17T12:42:59.177+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:60:59:49:e0:26:2e:bb:55:f9:0a:77:8a:71:f9:4a:d8:6c, Subject:CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R5, Issuer:CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R5, Key type:EC, Length:384, Cert Id:1997048439, Valid from:13/11/12, 5:30 am, Valid until:19/01/38, 8:44 am
+2026-02-17T12:42:59.178+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:04:00:00:00:00:01:21:58:53:08:a2, Subject:CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R3, Issuer:CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R3, Key type:RSA, Length:2048, Cert Id:733875591, Valid from:18/03/09, 3:30 pm, Valid until:18/03/29, 3:30 pm
+2026-02-17T12:42:59.179+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:11:d2:bb:b9:d7:23:18:9e:40:5f:0a:9d:2d:d0:df:25:67:d1, Subject:CN=GlobalSign Root R46, O=GlobalSign nv-sa, C=BE, Issuer:CN=GlobalSign Root R46, O=GlobalSign nv-sa, C=BE, Key type:RSA, Length:4096, Cert Id:1275948927, Valid from:20/03/19, 5:30 am, Valid until:20/03/46, 5:30 am
+2026-02-17T12:42:59.180+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:45:e6:bb:03:83:33:c3:85:65:48:e6:ff:45:51, Subject:CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R6, Issuer:CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R6, Key type:RSA, Length:4096, Cert Id:3788339543, Valid from:10/12/14, 5:30 am, Valid until:10/12/34, 5:30 am
+2026-02-17T12:42:59.181+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:00, Subject:OU=Go Daddy Class 2 Certification Authority, O="The Go Daddy Group, Inc.", C=US, Issuer:OU=Go Daddy Class 2 Certification Authority, O="The Go Daddy Group, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:4023522997, Valid from:29/06/04, 10:36 pm, Valid until:29/06/34, 10:36 pm
+2026-02-17T12:42:59.182+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:CN=Go Daddy Root Certificate Authority - G2, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US, Issuer:CN=Go Daddy Root Certificate Authority - G2, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US, Key type:RSA, Length:2048, Cert Id:439600313, Valid from:01/09/09, 5:30 am, Valid until:01/01/38, 5:29 am
+2026-02-17T12:42:59.183+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:02:03:e5:93:6f:31:b0:13:49:88:6b:a2:17, Subject:CN=GTS Root R1, O=Google Trust Services LLC, C=US, Issuer:CN=GTS Root R1, O=Google Trust Services LLC, C=US, Key type:RSA, Length:4096, Cert Id:657172038, Valid from:22/06/16, 5:30 am, Valid until:22/06/36, 5:30 am
+2026-02-17T12:42:59.184+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:02:03:e5:ae:c5:8d:04:25:1a:ab:11:25:aa, Subject:CN=GTS Root R2, O=Google Trust Services LLC, C=US, Issuer:CN=GTS Root R2, O=Google Trust Services LLC, C=US, Key type:RSA, Length:4096, Cert Id:948387669, Valid from:22/06/16, 5:30 am, Valid until:22/06/36, 5:30 am
+2026-02-17T12:42:59.186+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:02:03:e5:b8:82:eb:20:f8:25:27:6d:3d:66, Subject:CN=GTS Root R3, O=Google Trust Services LLC, C=US, Issuer:CN=GTS Root R3, O=Google Trust Services LLC, C=US, Key type:EC, Length:384, Cert Id:1163081155, Valid from:22/06/16, 5:30 am, Valid until:22/06/36, 5:30 am
+2026-02-17T12:42:59.187+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:02:03:e5:c0:68:ef:63:1a:9c:72:90:50:52, Subject:CN=GTS Root R4, O=Google Trust Services LLC, C=US, Issuer:CN=GTS Root R4, O=Google Trust Services LLC, C=US, Key type:EC, Length:384, Cert Id:1326433111, Valid from:22/06/16, 5:30 am, Valid until:22/06/36, 5:30 am
+2026-02-17T12:42:59.188+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withECDSA, Serial:00, Subject:CN=Hellenic Academic and Research Institutions ECC RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR, Issuer:CN=Hellenic Academic and Research Institutions ECC RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR, Key type:EC, Length:384, Cert Id:513613456, Valid from:07/07/15, 4:07 pm, Valid until:30/06/40, 4:07 pm
+2026-02-17T12:42:59.190+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:CN=Hellenic Academic and Research Institutions RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR, Issuer:CN=Hellenic Academic and Research Institutions RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR, Key type:RSA, Length:4096, Cert Id:3491990565, Valid from:07/07/15, 3:41 pm, Valid until:30/06/40, 3:41 pm
+2026-02-17T12:42:59.192+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:0a:01:42:80:00:00:01:45:23:c8:44:b5:00:00:00:02, Subject:CN=IdenTrust Commercial Root CA 1, O=IdenTrust, C=US, Issuer:CN=IdenTrust Commercial Root CA 1, O=IdenTrust, C=US, Key type:RSA, Length:4096, Cert Id:1232565210, Valid from:16/01/14, 11:42 pm, Valid until:16/01/34, 11:42 pm
+2026-02-17T12:42:59.196+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:0a:01:42:80:00:00:01:45:23:cf:46:7c:00:00:00:02, Subject:CN=IdenTrust Public Sector Root CA 1, O=IdenTrust, C=US, Issuer:CN=IdenTrust Public Sector Root CA 1, O=IdenTrust, C=US, Key type:RSA, Length:4096, Cert Id:2123370772, Valid from:16/01/14, 11:23 pm, Valid until:16/01/34, 11:23 pm
+2026-02-17T12:42:59.198+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:00:82:10:cf:b0:d2:40:e3:59:44:63:e0:bb:63:82:8b:00, Subject:CN=ISRG Root X1, O=Internet Security Research Group, C=US, Issuer:CN=ISRG Root X1, O=Internet Security Research Group, C=US, Key type:RSA, Length:4096, Cert Id:1521974916, Valid from:04/06/15, 4:34 pm, Valid until:04/06/35, 4:34 pm
+2026-02-17T12:42:59.201+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:41:d2:9d:d1:72:ea:ee:a7:80:c1:2c:6c:e9:2f:87:52, Subject:CN=ISRG Root X2, O=Internet Security Research Group, C=US, Issuer:CN=ISRG Root X2, O=Internet Security Research Group, C=US, Key type:EC, Length:384, Cert Id:3398642244, Valid from:04/09/20, 5:30 am, Valid until:17/09/40, 9:30 pm
+2026-02-17T12:42:59.203+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:0a:7e:a6:df:4b:44:9e:da:6a:24:85:9e:e6:b8:15:d3:16:7f:bb:b1, Subject:CN=LuxTrust Global Root 2, O=LuxTrust S.A., C=LU, Issuer:CN=LuxTrust Global Root 2, O=LuxTrust S.A., C=LU, Key type:RSA, Length:4096, Cert Id:3055636602, Valid from:05/03/15, 6:51 pm, Valid until:05/03/35, 6:51 pm
+2026-02-17T12:42:59.205+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:0b:b8, Subject:CN=LuxTrust Global Root, O=LuxTrust s.a., C=LU, Issuer:CN=LuxTrust Global Root, O=LuxTrust s.a., C=LU, Key type:RSA, Length:2048, Cert Id:1714819687, Valid from:17/03/11, 3:21 pm, Valid until:17/03/21, 3:21 pm
+2026-02-17T12:42:59.207+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:66:f2:3d:af:87:de:8b:b1:4a:ea:0c:57:31:01:c2:ec, Subject:CN=Microsoft ECC Root Certificate Authority 2017, O=Microsoft Corporation, C=US, Issuer:CN=Microsoft ECC Root Certificate Authority 2017, O=Microsoft Corporation, C=US, Key type:EC, Length:384, Cert Id:3240761285, Valid from:19/12/19, 4:36 am, Valid until:19/07/42, 4:46 am
+2026-02-17T12:42:59.208+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:1e:d3:97:09:5f:d8:b4:b3:47:70:1e:aa:be:7f:45:b3, Subject:CN=Microsoft RSA Root Certificate Authority 2017, O=Microsoft Corporation, C=US, Issuer:CN=Microsoft RSA Root Certificate Authority 2017, O=Microsoft Corporation, C=US, Key type:RSA, Length:4096, Cert Id:2848349048, Valid from:19/12/19, 4:21 am, Valid until:19/07/42, 4:30 am
+2026-02-17T12:42:59.212+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:3a:b6:50:8b, Subject:CN=QuoVadis Root Certification Authority, OU=Root Certification Authority, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root Certification Authority, OU=Root Certification Authority, O=QuoVadis Limited, C=BM, Key type:RSA, Length:2048, Cert Id:2412561694, Valid from:20/03/01, 12:03 am, Valid until:18/03/21, 12:03 am
+2026-02-17T12:42:59.213+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:78:58:5f:2e:ad:2c:19:4b:e3:37:07:35:34:13:28:b5:96:d4:65:93, Subject:CN=QuoVadis Root CA 1 G3, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 1 G3, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:3532531262, Valid from:12/01/12, 10:57 pm, Valid until:12/01/42, 10:57 pm
+2026-02-17T12:42:59.214+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:05:09, Subject:CN=QuoVadis Root CA 2, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 2, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:338250116, Valid from:24/11/06, 11:57 pm, Valid until:24/11/31, 11:53 pm
+2026-02-17T12:42:59.215+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:44:57:34:24:5b:81:89:9b:35:f2:ce:b8:2b:3b:5b:a7:26:f0:75:28, Subject:CN=QuoVadis Root CA 2 G3, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 2 G3, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:696763521, Valid from:13/01/12, 12:29 am, Valid until:13/01/42, 12:29 am
+2026-02-17T12:42:59.217+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:05:c6, Subject:CN=QuoVadis Root CA 3, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 3, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:1470392860, Valid from:25/11/06, 12:41 am, Valid until:25/11/31, 12:36 am
+2026-02-17T12:42:59.218+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:2e:f5:9b:02:28:a7:db:7a:ff:d5:a3:a9:ee:bd:03:a0:cf:12:6a:1d, Subject:CN=QuoVadis Root CA 3 G3, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 3 G3, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:3589344305, Valid from:13/01/12, 1:56 am, Valid until:13/01/42, 1:56 am
+2026-02-17T12:42:59.219+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:OU=Security Communication RootCA2, O="SECOM Trust Systems CO.,LTD.", C=JP, Issuer:OU=Security Communication RootCA2, O="SECOM Trust Systems CO.,LTD.", C=JP, Key type:RSA, Length:2048, Cert Id:1521072570, Valid from:29/05/09, 10:30 am, Valid until:29/05/29, 10:30 am
+2026-02-17T12:42:59.219+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:50:24:9b:a2:ef:8e:a6:bf:6c:2c:1f:1a:63:85:d4:c3, Subject:CN=Sectigo Public Code Signing Root E46, O=Sectigo Limited, C=GB, Issuer:CN=Sectigo Public Code Signing Root E46, O=Sectigo Limited, C=GB, Key type:EC, Length:384, Cert Id:3143279241, Valid from:22/03/21, 5:30 am, Valid until:22/03/46, 5:29 am
+2026-02-17T12:42:59.221+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:4b:2c:3b:01:01:8b:ad:2a:bc:8c:7b:5b:3e:ed:90:57, Subject:CN=Sectigo Public Code Signing Root R46, O=Sectigo Limited, C=GB, Issuer:CN=Sectigo Public Code Signing Root R46, O=Sectigo Limited, C=GB, Key type:RSA, Length:4096, Cert Id:2667769042, Valid from:22/03/21, 5:30 am, Valid until:22/03/46, 5:29 am
+2026-02-17T12:42:59.222+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:42:f2:cc:da:1b:69:37:44:5f:15:fe:75:28:10:b8:f4, Subject:CN=Sectigo Public Server Authentication Root E46, O=Sectigo Limited, C=GB, Issuer:CN=Sectigo Public Server Authentication Root E46, O=Sectigo Limited, C=GB, Key type:EC, Length:384, Cert Id:3789385269, Valid from:22/03/21, 5:30 am, Valid until:22/03/46, 5:29 am
+2026-02-17T12:42:59.223+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:75:8d:fd:8b:ae:7c:07:00:fa:a9:25:a7:e1:c7:ad:14, Subject:CN=Sectigo Public Server Authentication Root R46, O=Sectigo Limited, C=GB, Issuer:CN=Sectigo Public Server Authentication Root R46, O=Sectigo Limited, C=GB, Key type:RSA, Length:4096, Cert Id:3806652169, Valid from:22/03/21, 5:30 am, Valid until:22/03/46, 5:29 am
+2026-02-17T12:42:59.224+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:0c:f0:8e:5c:08:16:a5:ad:42:7f:f0:eb:27:18:59:d0, Subject:CN=SecureTrust CA, O=SecureTrust Corporation, C=US, Issuer:CN=SecureTrust CA, O=SecureTrust Corporation, C=US, Key type:RSA, Length:2048, Cert Id:2034155325, Valid from:08/11/06, 1:01 am, Valid until:01/01/30, 1:10 am
+2026-02-17T12:42:59.226+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withECDSA, Serial:75:e6:df:cb:c1:68:5b:a8, Subject:CN=SSL.com Root Certification Authority ECC, O=SSL Corporation, L=Houston, ST=Texas, C=US, Issuer:CN=SSL.com Root Certification Authority ECC, O=SSL Corporation, L=Houston, ST=Texas, C=US, Key type:EC, Length:384, Cert Id:2926673683, Valid from:12/02/16, 11:44 pm, Valid until:12/02/41, 11:44 pm
+2026-02-17T12:42:59.227+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:56:b6:29:cd:34:bc:78:f6, Subject:CN=SSL.com EV Root Certification Authority RSA R2, O=SSL Corporation, L=Houston, ST=Texas, C=US, Issuer:CN=SSL.com EV Root Certification Authority RSA R2, O=SSL Corporation, L=Houston, ST=Texas, C=US, Key type:RSA, Length:4096, Cert Id:1381862403, Valid from:31/05/17, 11:44 pm, Valid until:30/05/42, 11:44 pm
+2026-02-17T12:42:59.228+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:7b:2c:9b:d3:16:80:32:99, Subject:CN=SSL.com Root Certification Authority RSA, O=SSL Corporation, L=Houston, ST=Texas, C=US, Issuer:CN=SSL.com Root Certification Authority RSA, O=SSL Corporation, L=Houston, ST=Texas, C=US, Key type:RSA, Length:4096, Cert Id:156725711, Valid from:12/02/16, 11:09 pm, Valid until:12/02/41, 11:09 pm
+2026-02-17T12:42:59.231+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:14:03:f5:ab:fb:37:8b:17:40:5b:e2:43:b2:a5:d1:c4, Subject:CN=SSL.com TLS ECC Root CA 2022, O=SSL Corporation, C=US, Issuer:CN=SSL.com TLS ECC Root CA 2022, O=SSL Corporation, C=US, Key type:EC, Length:384, Cert Id:683561703, Valid from:25/08/22, 10:03 pm, Valid until:19/08/46, 10:03 pm
+2026-02-17T12:42:59.231+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:6f:be:da:ad:73:bd:08:40:e2:8b:4d:be:d4:f7:5b:91, Subject:CN=SSL.com TLS RSA Root CA 2022, O=SSL Corporation, C=US, Issuer:CN=SSL.com TLS RSA Root CA 2022, O=SSL Corporation, C=US, Key type:RSA, Length:4096, Cert Id:556880013, Valid from:25/08/22, 10:04 pm, Valid until:19/08/46, 10:04 pm
+2026-02-17T12:42:59.232+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:00, Subject:OU=Starfield Class 2 Certification Authority, O="Starfield Technologies, Inc.", C=US, Issuer:OU=Starfield Class 2 Certification Authority, O="Starfield Technologies, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:1825617644, Valid from:29/06/04, 11:09 pm, Valid until:29/06/34, 11:09 pm
+2026-02-17T12:42:59.233+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:CN=Starfield Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US, Issuer:CN=Starfield Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US, Key type:RSA, Length:2048, Cert Id:3268325709, Valid from:01/09/09, 5:30 am, Valid until:01/01/38, 5:29 am
+2026-02-17T12:42:59.234+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US, Issuer:CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US, Key type:RSA, Length:2048, Cert Id:1964785574, Valid from:01/09/09, 5:30 am, Valid until:01/01/38, 5:29 am
+2026-02-17T12:42:59.236+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:00:bb:40:1c:43:f5:5e:4f:b0, Subject:CN=SwissSign Gold CA - G2, O=SwissSign AG, C=CH, Issuer:CN=SwissSign Gold CA - G2, O=SwissSign AG, C=CH, Key type:RSA, Length:4096, Cert Id:1516221943, Valid from:25/10/06, 2:00 pm, Valid until:25/10/36, 2:00 pm
+2026-02-17T12:42:59.237+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:4e:b2:00:67:0c:03:5d:4f, Subject:CN=SwissSign Platinum CA - G2, O=SwissSign AG, C=CH, Issuer:CN=SwissSign Platinum CA - G2, O=SwissSign AG, C=CH, Key type:RSA, Length:4096, Cert Id:771312514, Valid from:25/10/06, 2:06 pm, Valid until:25/10/36, 2:06 pm
+2026-02-17T12:42:59.238+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:4f:1b:d4:2f:54:bb:2f:4b, Subject:CN=SwissSign Silver CA - G2, O=SwissSign AG, C=CH, Issuer:CN=SwissSign Silver CA - G2, O=SwissSign AG, C=CH, Key type:RSA, Length:4096, Cert Id:126726124, Valid from:25/10/06, 2:02 pm, Valid until:25/10/36, 2:02 pm
+2026-02-17T12:42:59.239+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:01:67:5f:27:d6:fe:7a:e3:e4:ac:be:09:5b:05:9e, Subject:CN=Telia Root CA v2, O=Telia Finland Oyj, C=FI, Issuer:CN=Telia Root CA v2, O=Telia Finland Oyj, C=FI, Key type:RSA, Length:4096, Cert Id:3473063976, Valid from:29/11/18, 5:25 pm, Valid until:29/11/43, 5:25 pm
+2026-02-17T12:42:59.240+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:00:95:be:16:a0:f7:2e:46:f1:7b:39:82:72:fa:8b:cd:96, Subject:CN=TeliaSonera Root CA v1, O=TeliaSonera, Issuer:CN=TeliaSonera Root CA v1, O=TeliaSonera, Key type:RSA, Length:4096, Cert Id:1495358374, Valid from:18/10/07, 5:30 pm, Valid until:18/10/32, 5:30 pm
+2026-02-17T12:42:59.241+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:34:4e:d5:57:20:d5:ed:ec:49:f4:2f:ce:37:db:2b:6d, Subject:CN=thawte Primary Root CA, OU="(c) 2006 thawte, Inc. - For authorized use only", OU=Certification Services Division, O="thawte, Inc.", C=US, Issuer:CN=thawte Primary Root CA, OU="(c) 2006 thawte, Inc. - For authorized use only", OU=Certification Services Division, O="thawte, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:643000026, Valid from:17/11/06, 5:30 am, Valid until:17/07/36, 5:29 am
+2026-02-17T12:42:59.243+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:35:fc:26:5c:d9:84:4f:c9:3d:26:3d:57:9b:ae:d7:56, Subject:CN=thawte Primary Root CA - G2, OU="(c) 2007 thawte, Inc. - For authorized use only", O="thawte, Inc.", C=US, Issuer:CN=thawte Primary Root CA - G2, OU="(c) 2007 thawte, Inc. - For authorized use only", O="thawte, Inc.", C=US, Key type:EC, Length:384, Cert Id:2068083090, Valid from:05/11/07, 5:30 am, Valid until:19/01/38, 5:29 am
+2026-02-17T12:42:59.243+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:60:01:97:b7:46:a7:ea:b4:b4:9a:d6:4b:2f:f7:90:fb, Subject:CN=thawte Primary Root CA - G3, OU="(c) 2008 thawte, Inc. - For authorized use only", OU=Certification Services Division, O="thawte, Inc.", C=US, Issuer:CN=thawte Primary Root CA - G3, OU="(c) 2008 thawte, Inc. - For authorized use only", OU=Certification Services Division, O="thawte, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:1032730720, Valid from:02/04/08, 5:30 am, Valid until:02/12/37, 5:29 am
+2026-02-17T12:42:59.244+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=T-TeleSec GlobalRoot Class 2, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE, Issuer:CN=T-TeleSec GlobalRoot Class 2, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE, Key type:RSA, Length:2048, Cert Id:3056503257, Valid from:01/10/08, 4:10 pm, Valid until:02/10/33, 5:29 am
+2026-02-17T12:42:59.245+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=T-TeleSec GlobalRoot Class 3, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE, Issuer:CN=T-TeleSec GlobalRoot Class 3, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE, Key type:RSA, Length:2048, Cert Id:1894096264, Valid from:01/10/08, 3:59 pm, Valid until:02/10/33, 5:29 am
+2026-02-17T12:42:59.247+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:0c:be, Subject:CN=TWCA Global Root CA, OU=Root CA, O=TAIWAN-CA, C=TW, Issuer:CN=TWCA Global Root CA, OU=Root CA, O=TAIWAN-CA, C=TW, Key type:RSA, Length:4096, Cert Id:861175838, Valid from:27/06/12, 11:58 am, Valid until:31/12/30, 9:29 pm
+2026-02-17T12:42:59.247+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:5c:8b:99:c5:5a:94:c5:d2:71:56:de:cd:89:80:cc:26, Subject:CN=USERTrust ECC Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US, Issuer:CN=USERTrust ECC Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US, Key type:EC, Length:384, Cert Id:3329287386, Valid from:01/02/10, 5:30 am, Valid until:19/01/38, 5:29 am
+2026-02-17T12:42:59.247+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withRSA, Serial:01:fd:6d:30:fc:a3:ca:51:a8:1b:bc:64:0e:35:03:2d, Subject:CN=USERTrust RSA Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US, Issuer:CN=USERTrust RSA Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US, Key type:RSA, Length:4096, Cert Id:3947601401, Valid from:01/02/10, 5:30 am, Valid until:19/01/38, 5:29 am
+2026-02-17T12:42:59.251+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:44:be:0c:8b:50:00:24:b4:11:d3:36:2d:e0:b3:5f:1b, Subject:CN=UTN-USERFirst-Object, OU=http://www.usertrust.com, O=The USERTRUST Network, L=Salt Lake City, ST=UT, C=US, Issuer:CN=UTN-USERFirst-Object, OU=http://www.usertrust.com, O=The USERTRUST Network, L=Salt Lake City, ST=UT, C=US, Key type:RSA, Length:2048, Cert Id:3997913868, Valid from:10/07/99, 12:01 am, Valid until:10/07/19, 12:10 am
+2026-02-17T12:42:59.252+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:00:9b:7e:06:49:a3:3e:62:b9:d5:ee:90:48:71:29:ef:57, Subject:CN=VeriSign Class 3 Public Primary Certification Authority - G3, OU="(c) 1999 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Issuer:CN=VeriSign Class 3 Public Primary Certification Authority - G3, OU="(c) 1999 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:2057300190, Valid from:01/10/99, 5:30 am, Valid until:17/07/36, 5:29 am
+2026-02-17T12:42:59.252+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA384withECDSA, Serial:2f:80:fe:23:8c:0e:22:0f:48:67:12:28:91:87:ac:b3, Subject:CN=VeriSign Class 3 Public Primary Certification Authority - G4, OU="(c) 2007 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Issuer:CN=VeriSign Class 3 Public Primary Certification Authority - G4, OU="(c) 2007 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Key type:EC, Length:384, Cert Id:4163473319, Valid from:05/11/07, 5:30 am, Valid until:19/01/38, 5:29 am
+2026-02-17T12:42:59.253+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:18:da:d1:9e:26:7d:e8:bb:4a:21:58:cd:cc:6b:3b:4a, Subject:CN=VeriSign Class 3 Public Primary Certification Authority - G5, OU="(c) 2006 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Issuer:CN=VeriSign Class 3 Public Primary Certification Authority - G5, OU="(c) 2006 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:303010488, Valid from:08/11/06, 5:30 am, Valid until:17/07/36, 5:29 am
+2026-02-17T12:42:59.256+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA256withRSA, Serial:40:1a:c4:64:21:b3:13:21:03:0e:bb:e4:12:1a:c5:1d, Subject:CN=VeriSign Universal Root Certification Authority, OU="(c) 2008 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Issuer:CN=VeriSign Universal Root Certification Authority, OU="(c) 2008 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:2318285810, Valid from:02/04/08, 5:30 am, Valid until:02/12/37, 5:29 am
+2026-02-17T12:42:59.256+05:30 DEBUG 12948 --- [toshi] [main] jdk.event.security                       : X509Certificate: Alg:SHA1withRSA, Serial:50:94:6c:ec:18:ea:d5:9c:4d:d5:97:ef:75:8f:a0:ad, Subject:CN=XRamp Global Certification Authority, O=XRamp Security Services Inc, OU=www.xrampsecurity.com, C=US, Issuer:CN=XRamp Global Certification Authority, O=XRamp Security Services Inc, OU=www.xrampsecurity.com, C=US, Key type:RSA, Length:2048, Cert Id:3342493210, Valid from:01/11/04, 10:44 pm, Valid until:01/01/35, 11:07 am
+2026-02-17T12:42:59.439+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'paymentRepository'
+2026-02-17T12:42:59.454+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'r2dbc.named-queries#0'
+2026-02-17T12:42:59.461+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'r2dbc.PaymentRepository.fragments#0'
+2026-02-17T12:42:59.469+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'r2dbcEntityTemplate'
+2026-02-17T12:42:59.469+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.data.r2dbc.autoconfigure.DataR2dbcAutoConfiguration'
+2026-02-17T12:42:59.469+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'r2dbcDatabaseClient'
+2026-02-17T12:42:59.470+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.r2dbc.autoconfigure.ConnectionFactoryDependentConfiguration'
+2026-02-17T12:42:59.470+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'connectionFactory'
+2026-02-17T12:42:59.470+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.r2dbc.autoconfigure.ConnectionFactoryConfigurations$PoolConfiguration$PooledConnectionFactoryConfiguration'
+2026-02-17T12:42:59.473+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.r2dbc-org.springframework.boot.r2dbc.autoconfigure.R2dbcProperties'
+2026-02-17T12:42:59.476+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'connectionFactory' via factory method to bean named 'spring.r2dbc-org.springframework.boot.r2dbc.autoconfigure.R2dbcProperties'
+2026-02-17T12:42:59.478+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'connectionFactory' via factory method to bean named 'org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845'
+2026-02-17T12:42:59.485+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'propertiesR2dbcConnectionDetails'
+2026-02-17T12:42:59.485+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.r2dbc.autoconfigure.R2dbcAutoConfiguration'
+2026-02-17T12:42:59.486+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'propertiesR2dbcConnectionDetails' via factory method to bean named 'spring.r2dbc-org.springframework.boot.r2dbc.autoconfigure.R2dbcProperties'
+2026-02-17T12:42:59.532+05:30 DEBUG 12948 --- [toshi] [main] io.r2dbc.postgresql.Extensions           : Discovering Extensions using ServiceLoader
+2026-02-17T12:42:59.535+05:30 DEBUG 12948 --- [toshi] [main] io.r2dbc.postgresql.Extensions           : Registering extension io.r2dbc.postgresql.codec.BuiltinDynamicCodecs
+2026-02-17T12:42:59.615+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'r2dbcDatabaseClient' via factory method to bean named 'connectionFactory'
+2026-02-17T12:42:59.641+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.data.r2dbc.autoconfigure.DataR2dbcAutoConfiguration' via constructor to bean named 'r2dbcDatabaseClient'
+2026-02-17T12:42:59.703+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'r2dbcConverter'
+2026-02-17T12:42:59.704+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'r2dbcMappingContext'
+2026-02-17T12:42:59.705+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'r2dbcCustomConversions'
+2026-02-17T12:42:59.809+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class io.r2dbc.postgresql.codec.Point to class org.springframework.data.geo.Point as reading converter
+2026-02-17T12:42:59.810+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.geo.Point to class io.r2dbc.postgresql.codec.Point as writing converter
+2026-02-17T12:42:59.811+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class io.r2dbc.postgresql.codec.Circle to class org.springframework.data.geo.Circle as reading converter
+2026-02-17T12:42:59.811+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.geo.Circle to class io.r2dbc.postgresql.codec.Circle as writing converter
+2026-02-17T12:42:59.811+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class io.r2dbc.postgresql.codec.Box to class org.springframework.data.geo.Box as reading converter
+2026-02-17T12:42:59.812+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.geo.Box to class io.r2dbc.postgresql.codec.Box as writing converter
+2026-02-17T12:42:59.812+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class io.r2dbc.postgresql.codec.Polygon to class org.springframework.data.geo.Polygon as reading converter
+2026-02-17T12:42:59.812+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.geo.Polygon to class io.r2dbc.postgresql.codec.Polygon as writing converter
+2026-02-17T12:42:59.812+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class io.r2dbc.postgresql.codec.Json to class [B as reading converter
+2026-02-17T12:42:59.814+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class io.r2dbc.postgresql.codec.Json to class java.lang.String as reading converter
+2026-02-17T12:42:59.814+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from interface io.r2dbc.spi.Row to class java.lang.Boolean as reading converter
+2026-02-17T12:42:59.815+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from interface io.r2dbc.spi.Row to class java.lang.Number as reading converter
+2026-02-17T12:42:59.815+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from interface io.r2dbc.spi.Row to class java.time.LocalDate as reading converter
+2026-02-17T12:42:59.815+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from interface io.r2dbc.spi.Row to class java.time.LocalDateTime as reading converter
+2026-02-17T12:42:59.815+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from interface io.r2dbc.spi.Row to class java.time.LocalTime as reading converter
+2026-02-17T12:42:59.815+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from interface io.r2dbc.spi.Row to class java.time.OffsetDateTime as reading converter
+2026-02-17T12:42:59.817+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from interface io.r2dbc.spi.Row to class java.lang.String as reading converter
+2026-02-17T12:42:59.817+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from interface io.r2dbc.spi.Row to class java.util.UUID as reading converter
+2026-02-17T12:42:59.817+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from interface io.r2dbc.spi.Row to class java.time.ZonedDateTime as reading converter
+2026-02-17T12:42:59.817+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter
+2026-02-17T12:42:59.817+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter
+2026-02-17T12:42:59.817+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Date to class java.time.LocalDate as reading converter
+2026-02-17T12:42:59.817+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.LocalDate to class java.util.Date as writing converter
+2026-02-17T12:42:59.817+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Date to class java.time.LocalTime as reading converter
+2026-02-17T12:42:59.818+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.LocalTime to class java.util.Date as writing converter
+2026-02-17T12:42:59.818+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Date to class java.time.Instant as reading converter
+2026-02-17T12:42:59.818+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.Instant to class java.util.Date as writing converter
+2026-02-17T12:42:59.818+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter
+2026-02-17T12:42:59.818+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter
+2026-02-17T12:42:59.818+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.ZoneId to class java.lang.String as writing converter
+2026-02-17T12:42:59.819+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.ZoneId as reading converter
+2026-02-17T12:42:59.819+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.Duration to class java.lang.String as writing converter
+2026-02-17T12:42:59.819+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.Duration as reading converter
+2026-02-17T12:42:59.819+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.Period to class java.lang.String as writing converter
+2026-02-17T12:42:59.819+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.Period as reading converter
+2026-02-17T12:42:59.819+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.LocalDate as reading converter
+2026-02-17T12:42:59.819+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter
+2026-02-17T12:42:59.820+05:30 DEBUG 12948 --- [toshi] [main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.Instant as reading converter
+2026-02-17T12:42:59.825+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'r2dbcManagedTypes'
+2026-02-17T12:42:59.825+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'r2dbcManagedTypes' via factory method to bean named 'org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845'
+2026-02-17T12:42:59.838+05:30 DEBUG 12948 --- [toshi] [main] ssPathScanningCandidateComponentProvider : Identified candidate component class: file [D:\gllfl_projects\toshi\target\classes\com\toshi\entity\Payment.class]
+2026-02-17T12:42:59.841+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'r2dbcMappingContext' via factory method to bean named 'r2dbcCustomConversions'
+2026-02-17T12:42:59.842+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'r2dbcMappingContext' via factory method to bean named 'r2dbcManagedTypes'
+2026-02-17T12:42:59.988+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'r2dbcConverter' via factory method to bean named 'r2dbcMappingContext'
+2026-02-17T12:42:59.989+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'r2dbcConverter' via factory method to bean named 'r2dbcCustomConversions'
+2026-02-17T12:43:00.036+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'r2dbcEntityTemplate' via factory method to bean named 'r2dbcConverter'
+2026-02-17T12:43:00.130+05:30 DEBUG 12948 --- [toshi] [main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.toshi.repository.PaymentRepository…
+2026-02-17T12:43:00.336+05:30 DEBUG 12948 --- [toshi] [main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.toshi.repository.PaymentRepository.
+2026-02-17T12:43:00.348+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'paymentServiceImpl' via constructor to bean named 'razorpayClient'
+2026-02-17T12:43:00.348+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'paymentServiceImpl' via constructor to bean named 'paymentRepository'
+2026-02-17T12:43:00.349+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'razorpay.secret' in PropertySource 'environmentProperties' with value of type String
+2026-02-17T12:43:00.351+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'paymentController' via constructor to bean named 'paymentServiceImpl'
+2026-02-17T12:43:00.352+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'razorpay.secret' in PropertySource 'environmentProperties' with value of type String
+2026-02-17T12:43:00.421+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'globalExceptionHandler'
+2026-02-17T12:43:00.430+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'securityWebFilterChain'
+2026-02-17T12:43:00.431+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.reactive.ServerHttpSecurityConfiguration'
+2026-02-17T12:43:00.438+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webFluxAdapterRegistry'
+2026-02-17T12:43:00.438+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.webflux.autoconfigure.WebFluxAutoConfiguration$EnableWebFluxConfiguration'
+2026-02-17T12:43:00.441+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.webflux-org.springframework.boot.webflux.autoconfigure.WebFluxProperties'
+2026-02-17T12:43:00.445+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2026-02-17T12:43:00.459+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.webflux.autoconfigure.WebFluxAutoConfiguration$EnableWebFluxConfiguration' via constructor to bean named 'spring.webflux-org.springframework.boot.webflux.autoconfigure.WebFluxProperties'
+2026-02-17T12:43:00.459+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.webflux.autoconfigure.WebFluxAutoConfiguration$EnableWebFluxConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2026-02-17T12:43:00.459+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.webflux.autoconfigure.WebFluxAutoConfiguration$EnableWebFluxConfiguration' via constructor to bean named 'server-org.springframework.boot.web.server.autoconfigure.ServerProperties'
+2026-02-17T12:43:00.472+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.webflux.autoconfigure.WebFluxAutoConfiguration$WebFluxConfig'
+2026-02-17T12:43:00.482+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.webflux.autoconfigure.WebFluxAutoConfiguration$WebFluxConfig' via constructor to bean named 'environment'
+2026-02-17T12:43:00.482+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.webflux.autoconfigure.WebFluxAutoConfiguration$WebFluxConfig' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2026-02-17T12:43:00.482+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.webflux.autoconfigure.WebFluxAutoConfiguration$WebFluxConfig' via constructor to bean named 'spring.webflux-org.springframework.boot.webflux.autoconfigure.WebFluxProperties'
+2026-02-17T12:43:00.483+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.webflux.autoconfigure.WebFluxAutoConfiguration$WebFluxConfig' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@70dd7e15'
+2026-02-17T12:43:00.490+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authenticationPrincipalArgumentResolverConfigurer'
+2026-02-17T12:43:00.503+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'reactiveUserDetailsService'
+2026-02-17T12:43:00.503+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.security.autoconfigure.ReactiveUserDetailsServiceAutoConfiguration'
+2026-02-17T12:43:00.505+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.security-org.springframework.boot.security.autoconfigure.SecurityProperties'
+2026-02-17T12:43:00.510+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'reactiveUserDetailsService' via factory method to bean named 'spring.security-org.springframework.boot.security.autoconfigure.SecurityProperties'
+2026-02-17T12:43:00.511+05:30  INFO 12948 --- [toshi] [main] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c8148d5d-6ff4-4802-8dd9-19893d8e2d83
+
+2026-02-17T12:43:00.522+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'reactiveAuthenticationManagerPostProcessor'
+2026-02-17T12:43:00.530+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.security.config.annotation.web.reactive.HttpSecurityConfiguration.httpSecurity' via factory method to bean named 'org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845'
+2026-02-17T12:43:00.760+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'securityWebFilterChain' via factory method to bean named 'org.springframework.security.config.annotation.web.reactive.HttpSecurityConfiguration.httpSecurity'
+2026-02-17T12:43:00.767+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webAuthorizationManagerPostProcessor'
+2026-02-17T12:43:00.771+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+2026-02-17T12:43:00.777+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webFluxContentTypeResolver'
+2026-02-17T12:43:00.782+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webFluxApiVersionStrategy'
+2026-02-17T12:43:00.797+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'webFluxContentTypeResolver'
+2026-02-17T12:43:00.798+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'webFluxApiVersionStrategy'
+2026-02-17T12:43:00.950+05:30 DEBUG 12948 --- [toshi] [main] _.s.w.reactive.HandlerMapping.Mappings   : 
+	c.t.c.PaymentController:
+	{POST /api/payment/create-order}: createOrder(PaymentRequestDto)
+	{POST /api/payment/verify}: verifyPayment(String,String,String)
+	{GET /api/payment/status/{id}}: getPaymentStatus(Long)
+2026-02-17T12:43:00.967+05:30 DEBUG 12948 --- [toshi] [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2026-02-17T12:43:01.012+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2026-02-17T12:43:01.014+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.jackson.autoconfigure.JacksonAutoConfiguration$JsonProblemDetailsConfiguration'
+2026-02-17T12:43:01.015+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'problemDetailJsonMapperBuilderCustomizer'
+2026-02-17T12:43:01.016+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.jackson.autoconfigure.JacksonAutoConfiguration$JacksonJsonMapperBuilderCustomizerConfiguration'
+2026-02-17T12:43:01.017+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'standardJsonMapperBuilderCustomizer'
+2026-02-17T12:43:01.018+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.jackson.autoconfigure.JacksonProperties'
+2026-02-17T12:43:01.028+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'standardJsonMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.jackson.autoconfigure.JacksonProperties'
+2026-02-17T12:43:01.031+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jacksonMixinModule'
+2026-02-17T12:43:01.031+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.jackson.autoconfigure.JacksonAutoConfiguration$JacksonMixinConfiguration'
+2026-02-17T12:43:01.032+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jacksonMixinModuleEntries'
+2026-02-17T12:43:01.033+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonMixinModuleEntries' via factory method to bean named 'org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845'
+2026-02-17T12:43:01.049+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonMixinModule' via factory method to bean named 'org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845'
+2026-02-17T12:43:01.050+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonMixinModule' via factory method to bean named 'jacksonMixinModuleEntries'
+2026-02-17T12:43:01.062+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jsonComponentModule'
+2026-02-17T12:43:01.062+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.jackson.autoconfigure.JacksonAutoConfiguration'
+2026-02-17T12:43:01.072+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jacksonJsonMapper'
+2026-02-17T12:43:01.075+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jsonMapperBuilder' via factory method to bean named 'problemDetailJsonMapperBuilderCustomizer'
+2026-02-17T12:43:01.075+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jsonMapperBuilder' via factory method to bean named 'standardJsonMapperBuilderCustomizer'
+2026-02-17T12:43:01.094+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonJsonMapper' via factory method to bean named 'jsonMapperBuilder'
+2026-02-17T12:43:01.124+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.http.codec.autoconfigure.CodecsAutoConfiguration$DefaultCodecsConfiguration'
+2026-02-17T12:43:01.125+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'defaultCodecCustomizer'
+2026-02-17T12:43:01.127+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.http.codecs-org.springframework.boot.http.codec.autoconfigure.HttpCodecsProperties'
+2026-02-17T12:43:01.128+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'defaultCodecCustomizer' via factory method to bean named 'spring.http.codecs-org.springframework.boot.http.codec.autoconfigure.HttpCodecsProperties'
+2026-02-17T12:43:01.129+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.http.codec.autoconfigure.CodecsAutoConfiguration$JacksonJsonCodecConfiguration'
+2026-02-17T12:43:01.130+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jacksonCodecCustomizer'
+2026-02-17T12:43:01.131+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonCodecCustomizer' via factory method to bean named 'jacksonJsonMapper'
+2026-02-17T12:43:01.133+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.http.codec.autoconfigure.CodecsAutoConfiguration'
+2026-02-17T12:43:01.133+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.validation.autoconfigure.ValidationAutoConfiguration'
+2026-02-17T12:43:01.135+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'defaultValidator'
+2026-02-17T12:43:01.135+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'defaultValidator' via factory method to bean named 'org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845'
+2026-02-17T12:43:01.144+05:30 DEBUG 12948 --- [toshi] [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2026-02-17T12:43:01.155+05:30 DEBUG 12948 --- [toshi] [main] o.h.v.i.e.AbstractConfigurationImpl      : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2026-02-17T12:43:01.156+05:30 DEBUG 12948 --- [toshi] [main] o.h.v.i.e.AbstractConfigurationImpl      : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2026-02-17T12:43:01.159+05:30 DEBUG 12948 --- [toshi] [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2026-02-17T12:43:01.159+05:30 DEBUG 12948 --- [toshi] [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2026-02-17T12:43:01.160+05:30 DEBUG 12948 --- [toshi] [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2026-02-17T12:43:01.160+05:30 DEBUG 12948 --- [toshi] [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2026-02-17T12:43:01.160+05:30 DEBUG 12948 --- [toshi] [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2026-02-17T12:43:01.161+05:30 DEBUG 12948 --- [toshi] [main] o.h.v.i.e.resolver.TraversableResolvers  : Cannot find jakarta.persistence.Persistence on classpath. Assuming non Jakarta Persistence environment. All properties will per default be traversable.
+2026-02-17T12:43:01.162+05:30 DEBUG 12948 --- [toshi] [main] .i.e.ValidatorFactoryConfigurationHelper : HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2026-02-17T12:43:01.162+05:30 DEBUG 12948 --- [toshi] [main] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2026-02-17T12:43:01.162+05:30 DEBUG 12948 --- [toshi] [main] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2026-02-17T12:43:01.163+05:30 DEBUG 12948 --- [toshi] [main] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2026-02-17T12:43:01.163+05:30 DEBUG 12948 --- [toshi] [main] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2026-02-17T12:43:01.163+05:30 DEBUG 12948 --- [toshi] [main] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2026-02-17T12:43:01.166+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.webflux.autoconfigure.ReactiveMultipartAutoConfiguration'
+2026-02-17T12:43:01.167+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'defaultPartHttpMessageReaderCustomizer'
+2026-02-17T12:43:01.168+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.webflux.multipart-org.springframework.boot.webflux.autoconfigure.ReactiveMultipartProperties'
+2026-02-17T12:43:01.169+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'defaultPartHttpMessageReaderCustomizer' via factory method to bean named 'spring.webflux.multipart-org.springframework.boot.webflux.autoconfigure.ReactiveMultipartProperties'
+2026-02-17T12:43:01.171+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.webflux.autoconfigure.WebSessionIdResolverAutoConfiguration'
+2026-02-17T12:43:01.172+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.webflux.autoconfigure.WebSessionIdResolverAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.web.server.autoconfigure.ServerProperties'
+2026-02-17T12:43:01.172+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.webflux.autoconfigure.WebSessionIdResolverAutoConfiguration' via constructor to bean named 'spring.webflux-org.springframework.boot.webflux.autoconfigure.WebFluxProperties'
+2026-02-17T12:43:01.173+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webSessionIdResolver'
+2026-02-17T12:43:01.181+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.webflux.autoconfigure.error.ErrorWebFluxAutoConfiguration'
+2026-02-17T12:43:01.182+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'errorWebExceptionHandler'
+2026-02-17T12:43:01.183+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'errorAttributes'
+2026-02-17T12:43:01.191+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'serverCodecConfigurer'
+2026-02-17T12:43:01.361+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'errorWebExceptionHandler' via factory method to bean named 'errorAttributes'
+2026-02-17T12:43:01.362+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'errorWebExceptionHandler' via factory method to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2026-02-17T12:43:01.362+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'errorWebExceptionHandler' via factory method to bean named 'serverCodecConfigurer'
+2026-02-17T12:43:01.362+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'errorWebExceptionHandler' via factory method to bean named 'org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845'
+2026-02-17T12:43:01.396+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webFluxConversionService'
+2026-02-17T12:43:01.404+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webFluxValidator'
+2026-02-17T12:43:01.410+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'localeContextResolver'
+2026-02-17T12:43:01.415+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webSessionManager'
+2026-02-17T12:43:01.428+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webHandler'
+2026-02-17T12:43:01.430+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'routerFunctionMapping'
+2026-02-17T12:43:01.431+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'serverCodecConfigurer'
+2026-02-17T12:43:01.432+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'webFluxApiVersionStrategy'
+2026-02-17T12:43:01.438+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'resourceHandlerMapping'
+2026-02-17T12:43:01.438+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'resourceUrlProvider'
+2026-02-17T12:43:01.449+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'resourceUrlProvider'
+2026-02-17T12:43:01.480+05:30 DEBUG 12948 --- [toshi] [main] _.s.w.reactive.HandlerMapping.Mappings   : 'resourceHandlerMapping' {/webjars/**=ResourceWebHandler [classpath [META-INF/resources/webjars/]], /**=ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]}
+2026-02-17T12:43:01.481+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'welcomePageRouterFunctionMapping'
+2026-02-17T12:43:01.481+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.webflux.autoconfigure.WebFluxAutoConfiguration$WelcomePageConfiguration'
+2026-02-17T12:43:01.482+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageRouterFunctionMapping' via factory method to bean named 'org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845'
+2026-02-17T12:43:01.482+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageRouterFunctionMapping' via factory method to bean named 'spring.webflux-org.springframework.boot.webflux.autoconfigure.WebFluxProperties'
+2026-02-17T12:43:01.482+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageRouterFunctionMapping' via factory method to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2026-02-17T12:43:01.487+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+2026-02-17T12:43:01.489+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'webFluxAdapterRegistry'
+2026-02-17T12:43:01.490+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'serverCodecConfigurer'
+2026-02-17T12:43:01.490+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'webFluxConversionService'
+2026-02-17T12:43:01.490+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'webFluxContentTypeResolver'
+2026-02-17T12:43:01.490+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'webFluxValidator'
+2026-02-17T12:43:01.503+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authenticationPrincipalArgumentResolver'
+2026-02-17T12:43:01.520+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'reactiveCurrentSecurityContextArgumentResolver'
+2026-02-17T12:43:01.631+05:30 DEBUG 12948 --- [toshi] [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2026-02-17T12:43:01.633+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'handlerFunctionAdapter'
+2026-02-17T12:43:01.634+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'simpleHandlerAdapter'
+2026-02-17T12:43:01.648+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webFluxWebSocketHandlerAdapter'
+2026-02-17T12:43:01.666+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'responseEntityResultHandler'
+2026-02-17T12:43:01.668+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'responseEntityResultHandler' via factory method to bean named 'webFluxAdapterRegistry'
+2026-02-17T12:43:01.668+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'responseEntityResultHandler' via factory method to bean named 'serverCodecConfigurer'
+2026-02-17T12:43:01.668+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'responseEntityResultHandler' via factory method to bean named 'webFluxContentTypeResolver'
+2026-02-17T12:43:01.676+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'responseBodyResultHandler'
+2026-02-17T12:43:01.678+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'responseBodyResultHandler' via factory method to bean named 'webFluxAdapterRegistry'
+2026-02-17T12:43:01.678+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'responseBodyResultHandler' via factory method to bean named 'serverCodecConfigurer'
+2026-02-17T12:43:01.678+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'responseBodyResultHandler' via factory method to bean named 'webFluxContentTypeResolver'
+2026-02-17T12:43:01.681+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'viewResolutionResultHandler'
+2026-02-17T12:43:01.682+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'viewResolutionResultHandler' via factory method to bean named 'webFluxAdapterRegistry'
+2026-02-17T12:43:01.683+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'viewResolutionResultHandler' via factory method to bean named 'webFluxContentTypeResolver'
+2026-02-17T12:43:01.700+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'serverResponseResultHandler'
+2026-02-17T12:43:01.701+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'serverResponseResultHandler' via factory method to bean named 'serverCodecConfigurer'
+2026-02-17T12:43:01.704+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'responseStatusExceptionHandler'
+2026-02-17T12:43:01.710+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.webflux.autoconfigure.WebFluxAutoConfiguration'
+2026-02-17T12:43:01.714+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.webflux.autoconfigure.HttpHandlerAutoConfiguration$AnnotationConfig'
+2026-02-17T12:43:01.716+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.webflux.autoconfigure.HttpHandlerAutoConfiguration$AnnotationConfig' via constructor to bean named 'org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845'
+2026-02-17T12:43:01.718+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'httpHandler'
+2026-02-17T12:43:01.722+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.reactive.WebFluxSecurityConfiguration.WebFilterChainFilter'
+2026-02-17T12:43:01.722+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.reactive.WebFluxSecurityConfiguration'
+2026-02-17T12:43:01.729+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'filterChainDecoratorPostProcessor'
+2026-02-17T12:43:01.788+05:30 DEBUG 12948 --- [toshi] [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-17T12:43:01.793+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.webflux.autoconfigure.HttpHandlerAutoConfiguration'
+2026-02-17T12:43:01.794+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration'
+2026-02-17T12:43:01.795+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
+2026-02-17T12:43:01.796+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
+2026-02-17T12:43:01.797+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'applicationAvailability'
+2026-02-17T12:43:01.801+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2026-02-17T12:43:01.802+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration'
+2026-02-17T12:43:01.803+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'lifecycleProcessor'
+2026-02-17T12:43:01.805+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+2026-02-17T12:43:01.807+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'lifecycleProcessor' via factory method to bean named 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+2026-02-17T12:43:01.812+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2026-02-17T12:43:01.819+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2026-02-17T12:43:01.822+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2026-02-17T12:43:01.823+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration'
+2026-02-17T12:43:01.826+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration' via constructor to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2026-02-17T12:43:01.831+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'simpleAsyncTaskExecutorBuilder'
+2026-02-17T12:43:01.837+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$AsyncConfigurerConfiguration'
+2026-02-17T12:43:01.839+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'applicationTaskExecutorAsyncConfigurer'
+2026-02-17T12:43:01.841+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'applicationTaskExecutorAsyncConfigurer' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@70dd7e15'
+2026-02-17T12:43:01.845+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$BootstrapExecutorConfiguration'
+2026-02-17T12:43:01.846+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+2026-02-17T12:43:01.849+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$ThreadPoolTaskSchedulerBuilderConfiguration'
+2026-02-17T12:43:01.849+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'threadPoolTaskSchedulerBuilder'
+2026-02-17T12:43:01.851+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+2026-02-17T12:43:01.854+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'threadPoolTaskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+2026-02-17T12:43:01.861+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration'
+2026-02-17T12:43:01.864+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration' via constructor to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+2026-02-17T12:43:01.865+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'simpleAsyncTaskSchedulerBuilder'
+2026-02-17T12:43:01.872+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+2026-02-17T12:43:01.874+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.r2dbc.autoconfigure.ConnectionFactoryConfigurations$PoolConfiguration'
+2026-02-17T12:43:01.875+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.data.r2dbc.autoconfigure.DataR2dbcRepositoriesAutoConfiguration'
+2026-02-17T12:43:01.876+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'data-r2dbc.repository-aot-processor#0'
+2026-02-17T12:43:01.889+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.netty.autoconfigure.NettyAutoConfiguration'
+2026-02-17T12:43:01.890+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.netty-org.springframework.boot.netty.autoconfigure.NettyProperties'
+2026-02-17T12:43:01.893+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.netty.autoconfigure.NettyAutoConfiguration' via constructor to bean named 'spring.netty-org.springframework.boot.netty.autoconfigure.NettyProperties'
+2026-02-17T12:43:01.894+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'nettyAutoConfigurationLazyInitializationExcludeFilter'
+2026-02-17T12:43:01.897+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.persistence.autoconfigure.PersistenceExceptionTranslationAutoConfiguration'
+2026-02-17T12:43:01.898+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.r2dbc.autoconfigure.R2dbcInitializationAutoConfiguration'
+2026-02-17T12:43:01.900+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'r2dbcScriptDatabaseInitializer'
+2026-02-17T12:43:01.902+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.sql.init-org.springframework.boot.sql.autoconfigure.init.SqlInitializationProperties'
+2026-02-17T12:43:01.904+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'r2dbcScriptDatabaseInitializer' via factory method to bean named 'connectionFactory'
+2026-02-17T12:43:01.904+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'r2dbcScriptDatabaseInitializer' via factory method to bean named 'spring.sql.init-org.springframework.boot.sql.autoconfigure.init.SqlInitializationProperties'
+2026-02-17T12:43:01.920+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.reactor.autoconfigure.ReactorAutoConfiguration'
+2026-02-17T12:43:01.921+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.reactor-org.springframework.boot.reactor.autoconfigure.ReactorProperties'
+2026-02-17T12:43:01.923+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.reactor.autoconfigure.ReactorAutoConfiguration' via constructor to bean named 'spring.reactor-org.springframework.boot.reactor.autoconfigure.ReactorProperties'
+2026-02-17T12:43:01.924+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'reactorAutoConfigurationLazyInitializationExcludeFilter'
+2026-02-17T12:43:01.925+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.security.autoconfigure.SecurityAutoConfiguration'
+2026-02-17T12:43:01.925+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authenticationEventPublisher'
+2026-02-17T12:43:01.927+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'authenticationEventPublisher' via factory method to bean named 'org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845'
+2026-02-17T12:43:01.938+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestDataValueProcessor'
+2026-02-17T12:43:01.942+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.reactive.ReactiveObservationConfiguration'
+2026-02-17T12:43:01.943+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.security.autoconfigure.web.reactive.ReactiveWebSecurityAutoConfiguration$SpringBootWebFluxSecurityConfiguration$EnableWebFluxSecurityConfiguration'
+2026-02-17T12:43:01.944+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.security.autoconfigure.web.reactive.ReactiveWebSecurityAutoConfiguration$SpringBootWebFluxSecurityConfiguration'
+2026-02-17T12:43:01.945+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.security.autoconfigure.web.reactive.ReactiveWebSecurityAutoConfiguration'
+2026-02-17T12:43:01.945+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.transaction.autoconfigure.TransactionManagerCustomizationAutoConfiguration'
+2026-02-17T12:43:01.946+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'platformTransactionManagerCustomizers'
+2026-02-17T12:43:01.952+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'transactionExecutionListeners'
+2026-02-17T12:43:01.959+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.transaction-org.springframework.boot.transaction.autoconfigure.TransactionProperties'
+2026-02-17T12:43:01.965+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.r2dbc.autoconfigure.R2dbcTransactionManagerAutoConfiguration'
+2026-02-17T12:43:01.966+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'connectionFactoryTransactionManager'
+2026-02-17T12:43:01.967+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'connectionFactoryTransactionManager' via factory method to bean named 'connectionFactory'
+2026-02-17T12:43:01.986+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.transaction.autoconfigure.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration'
+2026-02-17T12:43:01.988+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.transaction.autoconfigure.TransactionAutoConfiguration$EnableTransactionManagementConfiguration'
+2026-02-17T12:43:01.988+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.transaction.autoconfigure.TransactionAutoConfiguration'
+2026-02-17T12:43:01.989+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'transactionalOperator'
+2026-02-17T12:43:01.990+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'transactionalOperator' via factory method to bean named 'connectionFactoryTransactionManager'
+2026-02-17T12:43:02.015+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147483647
+2026-02-17T12:43:02.016+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.support.DefaultLifecycleProcessor  : Successfully started bean 'springBootLoggingLifecycle'
+2026-02-17T12:43:02.016+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2026-02-17T12:43:02.047+05:30 DEBUG 12948 --- [toshi] [main] reactor.netty.tcp.TcpResources           : [http] resources will use the default LoopResources: DefaultLoopResources {prefix=reactor-http, daemon=true, selectCount=12, workerCount=12}
+2026-02-17T12:43:02.048+05:30 DEBUG 12948 --- [toshi] [main] reactor.netty.tcp.TcpResources           : [http] resources will use the default ConnectionProvider: reactor.netty.resources.DefaultPooledConnectionProvider@63a84bb6
+2026-02-17T12:43:02.048+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.support.DefaultLifecycleProcessor  : Successfully started bean 'reactorResourceFactory'
+2026-02-17T12:43:02.048+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 1073741823
+2026-02-17T12:43:02.048+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147481599
+2026-02-17T12:43:02.094+05:30 DEBUG 12948 --- [toshi] [main] r.netty.resources.DefaultLoopIOUring     : Default io_uring support : false
+2026-02-17T12:43:02.147+05:30 DEBUG 12948 --- [toshi] [main] io.netty.channel.epoll.Epoll             : Epoll support is not available: null
+2026-02-17T12:43:02.147+05:30 DEBUG 12948 --- [toshi] [main] r.netty.resources.DefaultLoopEpoll       : Default Epoll support : false
+2026-02-17T12:43:02.149+05:30 DEBUG 12948 --- [toshi] [main] r.netty.resources.DefaultLoopKQueue      : Default KQueue support : false
+2026-02-17T12:43:02.161+05:30 DEBUG 12948 --- [toshi] [main] i.n.channel.MultithreadEventLoopGroup    : -Dio.netty.eventLoopThreads: 24
+2026-02-17T12:43:02.167+05:30 DEBUG 12948 --- [toshi] [main] io.netty.channel.nio.NioIoHandler        : -Dio.netty.noKeySetOptimization: false
+2026-02-17T12:43:02.167+05:30 DEBUG 12948 --- [toshi] [main] io.netty.channel.nio.NioIoHandler        : -Dio.netty.selectorAutoRebuildThreshold: 512
+2026-02-17T12:43:02.174+05:30 DEBUG 12948 --- [toshi] [main] i.netty.util.internal.PlatformDependent  : org.jctools-core.MpscChunkedArrayQueue: available
+2026-02-17T12:43:02.282+05:30 DEBUG 12948 --- [toshi] [main] io.netty.channel.DefaultChannelId        : -Dio.netty.processId: 12948 (auto-detected)
+2026-02-17T12:43:02.286+05:30 DEBUG 12948 --- [toshi] [main] io.netty.util.NetUtil                    : -Djava.net.preferIPv4Stack: false
+2026-02-17T12:43:02.286+05:30 DEBUG 12948 --- [toshi] [main] io.netty.util.NetUtil                    : -Djava.net.preferIPv6Addresses: false
+2026-02-17T12:43:02.292+05:30 DEBUG 12948 --- [toshi] [main] io.netty.util.NetUtilInitializations     : Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+2026-02-17T12:43:02.293+05:30 DEBUG 12948 --- [toshi] [main] io.netty.util.NetUtil                    : Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2026-02-17T12:43:02.296+05:30 DEBUG 12948 --- [toshi] [main] io.netty.channel.DefaultChannelId        : -Dio.netty.machineId: 84:9e:56:ff:fe:f1:36:b1 (auto-detected)
+2026-02-17T12:43:02.325+05:30 DEBUG 12948 --- [toshi] [main] i.netty.buffer.AdaptiveByteBufAllocator  : -Dio.netty.allocator.useCachedMagazinesForNonEventLoopThreads: false
+2026-02-17T12:43:02.341+05:30 DEBUG 12948 --- [toshi] [main] io.netty.util.Recycler                   : -Dio.netty.recycler.maxCapacityPerThread: 4096
+2026-02-17T12:43:02.342+05:30 DEBUG 12948 --- [toshi] [main] io.netty.util.Recycler                   : -Dio.netty.recycler.ratio: 8
+2026-02-17T12:43:02.342+05:30 DEBUG 12948 --- [toshi] [main] io.netty.util.Recycler                   : -Dio.netty.recycler.chunkSize: 32
+2026-02-17T12:43:02.342+05:30 DEBUG 12948 --- [toshi] [main] io.netty.util.Recycler                   : -Dio.netty.recycler.blocking: false
+2026-02-17T12:43:02.342+05:30 DEBUG 12948 --- [toshi] [main] io.netty.util.Recycler                   : -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2026-02-17T12:43:02.353+05:30 DEBUG 12948 --- [toshi] [main] io.netty.buffer.ByteBufUtil              : -Dio.netty.allocator.type: adaptive
+2026-02-17T12:43:02.354+05:30 DEBUG 12948 --- [toshi] [main] io.netty.buffer.ByteBufUtil              : -Dio.netty.threadLocalDirectBufferSize: 0
+2026-02-17T12:43:02.354+05:30 DEBUG 12948 --- [toshi] [main] io.netty.buffer.ByteBufUtil              : -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2026-02-17T12:43:02.398+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-1] r.netty.transport.ServerTransport        : [c8f3f1f4, L:/[0:0:0:0:0:0:0:0]:8083] Bound new server
+2026-02-17T12:43:02.404+05:30  INFO 12948 --- [toshi] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8083 (http)
+2026-02-17T12:43:02.407+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.support.DefaultLifecycleProcessor  : Successfully started bean 'webServerStartStop'
+2026-02-17T12:43:02.408+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147482623
+2026-02-17T12:43:02.408+05:30 DEBUG 12948 --- [toshi] [main] o.s.c.support.DefaultLifecycleProcessor  : Successfully started bean 'webServerGracefulShutdown'
+2026-02-17T12:43:02.429+05:30 DEBUG 12948 --- [toshi] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnBooleanProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.ClassProxyingConfiguration matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.aspectj.weaver.Advice' (OnClassCondition)
+      - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   ApplicationAvailabilityAutoConfiguration#applicationAvailability matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.availability.ApplicationAvailability; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CodecsAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.http.codec.CodecConfigurer', 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   CodecsAutoConfiguration.JacksonJsonCodecConfiguration matched:
+      - @ConditionalOnClass found required class 'tools.jackson.databind.json.JsonMapper' (OnClassCondition)
+      - @ConditionalOnProperty (spring.http.codecs.preferred-json-mapper=jackson) matched (OnPropertyCondition)
+
+   CodecsAutoConfiguration.JacksonJsonCodecConfiguration#jacksonCodecCustomizer matched:
+      - @ConditionalOnBean (types: tools.jackson.databind.json.JsonMapper; SearchStrategy: all) found bean 'jacksonJsonMapper' (OnBeanCondition)
+
+   ConnectionFactoryConfigurations.PoolConfiguration matched:
+      - Property-based pooling is enabled (ConnectionFactoryConfigurations.PooledConnectionFactoryCondition)
+      - @ConditionalOnMissingBean (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConnectionFactoryConfigurations.PoolConfiguration.PooledConnectionFactoryConfiguration matched:
+      - @ConditionalOnClass found required class 'io.r2dbc.pool.ConnectionPool' (OnClassCondition)
+
+   ConnectionFactoryDependentConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.r2dbc.core.DatabaseClient' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) found a single bean 'connectionFactory' (OnBeanCondition)
+
+   ConnectionFactoryDependentConfiguration#r2dbcDatabaseClient matched:
+      - @ConditionalOnMissingBean (types: org.springframework.r2dbc.core.DatabaseClient; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataR2dbcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.r2dbc.core.DatabaseClient', 'org.springframework.data.r2dbc.core.R2dbcEntityTemplate' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: org.springframework.r2dbc.core.DatabaseClient; SearchStrategy: all) found a single bean 'r2dbcDatabaseClient' (OnBeanCondition)
+
+   DataR2dbcAutoConfiguration#r2dbcConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.r2dbc.convert.MappingR2dbcConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataR2dbcAutoConfiguration#r2dbcCustomConversions matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.r2dbc.convert.R2dbcCustomConversions; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataR2dbcAutoConfiguration#r2dbcEntityTemplate matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.r2dbc.core.R2dbcEntityTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataR2dbcAutoConfiguration#r2dbcManagedTypes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.relational.RelationalManagedTypes; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataR2dbcAutoConfiguration#r2dbcMappingContext matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.r2dbc.mapping.R2dbcMappingContext; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataR2dbcRepositoriesAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'io.r2dbc.spi.ConnectionFactory', 'org.springframework.data.r2dbc.repository.R2dbcRepository' (OnClassCondition)
+      - @ConditionalOnBooleanProperty (spring.data.r2dbc.repositories.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springframework.r2dbc.core.DatabaseClient; SearchStrategy: all) found bean 'r2dbcDatabaseClient'; @ConditionalOnMissingBean (types: org.springframework.data.r2dbc.repository.support.R2dbcRepositoryFactoryBean; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorWebFluxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+      - found ConfigurableReactiveWebEnvironment (OnWebApplicationCondition)
+
+   ErrorWebFluxAutoConfiguration#errorAttributes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.webflux.error.ErrorAttributes; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorWebFluxAutoConfiguration#errorWebExceptionHandler matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.webflux.error.ErrorWebExceptionHandler; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   HttpHandlerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.web.reactive.DispatcherHandler', 'org.springframework.http.server.reactive.HttpHandler' (OnClassCondition)
+      - found ConfigurableReactiveWebEnvironment (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.http.server.reactive.HttpHandler; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'tools.jackson.databind.json.JsonMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration#jacksonJsonMapper matched:
+      - @ConditionalOnMissingBean (types: tools.jackson.databind.json.JsonMapper; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration#jsonMapperBuilder matched:
+      - @ConditionalOnMissingBean (types: tools.jackson.databind.json.JsonMapper$Builder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.JsonProblemDetailsConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.ProblemDetail' (OnClassCondition)
+
+   LifecycleAutoConfiguration#defaultLifecycleProcessor matched:
+      - @ConditionalOnMissingBean (names: lifecycleProcessor; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   NettyAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.netty.util.NettyRuntime' (OnClassCondition)
+
+   NettyReactiveWebServerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.http.ReactiveHttpInputMessage', 'reactor.netty.http.server.HttpServer' (OnClassCondition)
+
+   NettyReactiveWebServerAutoConfiguration#nettyReactiveWebServerFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.server.reactive.ReactiveWebServerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration#persistenceExceptionTranslationPostProcessor matched:
+      - @ConditionalOnBooleanProperty (spring.persistence.exceptiontranslation.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   R2dbcAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
+      - @ConditionalOnResource found location classpath:META-INF/services/io.r2dbc.spi.ConnectionFactoryProvider (OnResourceCondition)
+
+   R2dbcAutoConfiguration#propertiesR2dbcConnectionDetails matched:
+      - @ConditionalOnProperty (spring.r2dbc.url) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.r2dbc.autoconfigure.R2dbcConnectionDetails; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   R2dbcInitializationAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'io.r2dbc.spi.ConnectionFactory', 'org.springframework.r2dbc.connection.init.DatabasePopulator' (OnClassCondition)
+      - SQL InitializationDatabase Initialization default value is EMBEDDED (OnSqlInitializationCondition)
+      - @ConditionalOnSingleCandidate (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) found a single bean 'connectionFactory'; @ConditionalOnMissingBean (types: org.springframework.boot.r2dbc.autoconfigure.ApplicationR2dbcScriptDatabaseInitializer,org.springframework.boot.jdbc.autoconfigure.ApplicationDataSourceScriptDatabaseInitializer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   R2dbcTransactionManagerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.r2dbc.connection.R2dbcTransactionManager', 'org.springframework.transaction.ReactiveTransactionManager' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) found a single bean 'connectionFactory' (OnBeanCondition)
+
+   R2dbcTransactionManagerAutoConfiguration#connectionFactoryTransactionManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.ReactiveTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ReactiveMultipartAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.http.codec.multipart.DefaultPartHttpMessageReader', 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+      - found ConfigurableReactiveWebEnvironment (OnWebApplicationCondition)
+
+   ReactiveUserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.ReactiveAuthenticationManager' (OnClassCondition)
+      - AnyNestedCondition 1 matched 2 did not; NestedCondition on MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'spring.security.user.password'; NestedCondition on MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'spring.security.user.name'; NestedCondition on MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured)
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on ReactiveUserDetailsServiceAutoConfiguration.RSocketEnabledOrReactiveWebApplication.ReactiveWebApplicationCondition found ConfigurableReactiveWebEnvironment; NestedCondition on ReactiveUserDetailsServiceAutoConfiguration.RSocketEnabledOrReactiveWebApplication.RSocketSecurityEnabledCondition @ConditionalOnBean (types: org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandler; SearchStrategy: all) did not find any beans of type org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandler (ReactiveUserDetailsServiceAutoConfiguration.RSocketEnabledOrReactiveWebApplication)
+      - @ConditionalOnMissingBean (types: org.springframework.security.authentication.ReactiveAuthenticationManager,org.springframework.security.core.userdetails.ReactiveUserDetailsService,org.springframework.security.authentication.ReactiveAuthenticationManagerResolver,org.springframework.security.oauth2.jwt.ReactiveJwtDecoder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ReactiveWebSecurityAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'reactor.core.publisher.Flux', 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity', 'org.springframework.security.web.server.WebFilterChainProxy', 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   ReactiveWebSecurityAutoConfiguration.SpringBootWebFluxSecurityConfiguration matched:
+      - found ConfigurableReactiveWebEnvironment (OnWebApplicationCondition)
+
+   ReactiveWebSecurityAutoConfiguration.SpringBootWebFluxSecurityConfiguration.EnableWebFluxSecurityConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.web.server.WebFilterChainProxy; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ReactorAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'reactor.core.publisher.Hooks' (OnClassCondition)
+
+   ReactorNettyConfigurations.ReactorResourceFactoryConfiguration#reactorResourceFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.client.ReactorResourceFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SecurityAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+   SecurityAutoConfiguration#authenticationEventPublisher matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationEventPublisher; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SslAutoConfiguration#sslBundleRegistry matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.ssl.SslBundleRegistry,org.springframework.boot.ssl.SslBundles; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+   TaskExecutorConfigurations.AsyncConfigurerConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.scheduling.annotation.AsyncConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ModelCondition @ConditionalOnProperty (spring.task.execution.mode=force) did not find property 'spring.task.execution.mode'; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ExecutorBeanCondition @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (TaskExecutorConfigurations.OnExecutorCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.ThreadPoolTaskExecutorBuilderConfiguration#threadPoolTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.ThreadPoolTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskSchedulingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
+
+   TaskSchedulingConfigurations.SimpleAsyncTaskSchedulerBuilderConfiguration#simpleAsyncTaskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskSchedulingConfigurations.ThreadPoolTaskSchedulerBuilderConfiguration#threadPoolTaskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.ThreadPoolTaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TransactionAutoConfiguration#transactionalOperator matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.transaction.ReactiveTransactionManager; SearchStrategy: all) found a single bean 'connectionFactoryTransactionManager'; @ConditionalOnMissingBean (types: org.springframework.transaction.reactive.TransactionalOperator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found bean 'connectionFactoryTransactionManager'; @ConditionalOnMissingBean (types: org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   TransactionManagerCustomizationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TransactionManagerCustomizationAutoConfiguration#platformTransactionManagerCustomizers matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.transaction.autoconfigure.TransactionManagerCustomizers; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ValidationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.validation.executable.ExecutableValidator' (OnClassCondition)
+      - @ConditionalOnResource found location classpath:META-INF/services/jakarta.validation.spi.ValidationProvider (OnResourceCondition)
+
+   ValidationAutoConfiguration#defaultValidator matched:
+      - @ConditionalOnMissingBean (types: jakarta.validation.Validator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ValidationAutoConfiguration#methodValidationPostProcessor matched:
+      - @ConditionalOnMissingBean (types: org.springframework.validation.beanvalidation.MethodValidationPostProcessor; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   WebFluxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+      - found ConfigurableReactiveWebEnvironment (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.reactive.config.WebFluxConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebFluxAutoConfiguration.EnableWebFluxConfiguration#localeContextResolver matched:
+      - @ConditionalOnMissingBean (names: localeContextResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebFluxAutoConfiguration.EnableWebFluxConfiguration#webSessionManager matched:
+      - @ConditionalOnMissingBean (names: webSessionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebSessionIdResolverAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.web.server.session.WebSessionManager', 'reactor.core.publisher.Mono' (OnClassCondition)
+      - found ConfigurableReactiveWebEnvironment (OnWebApplicationCondition)
+
+   WebSessionIdResolverAutoConfiguration#webSessionIdResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.server.session.WebSessionIdResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   CodecsAutoConfiguration.Jackson2JsonCodecConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   CodecsAutoConfiguration.KotlinxSerializationJsonCodecConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'kotlinx.serialization.json.Json' (OnClassCondition)
+
+   ConnectionFactoryConfigurations.GenericConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) found beans of type 'io.r2dbc.spi.ConnectionFactory' connectionFactory (OnBeanCondition)
+      Matched:
+         - @ConditionalOnBooleanProperty (spring.r2dbc.pool.enabled=false) matched (OnPropertyCondition)
+
+   ConnectionFactoryHealthContributorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.health.autoconfigure.contributor.ConditionalOnEnabledHealthIndicator' (OnClassCondition)
+
+   ConnectionPoolMetricsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.micrometer.core.instrument.MeterRegistry' (OnClassCondition)
+
+   DataRepositoryMetricsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean did not find required type 'io.micrometer.core.instrument.MeterRegistry' (OnBeanCondition)
+
+   DataWebAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+
+   JacksonAutoConfiguration.CborConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'tools.jackson.dataformat.cbor.CBORMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration.XmlConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'tools.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.jmx.enabled=true) did not find property 'spring.jmx.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+
+   JtaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.transaction.Transaction' (OnClassCondition)
+
+   ManagementWebSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration' (OnClassCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   NettyReactiveManagementContextAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextFactory' (OnClassCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   R2dbcObservationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.r2dbc.proxy.ProxyConnectionFactory' (OnClassCondition)
+
+   R2dbcProxyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.r2dbc.proxy.ProxyConnectionFactory' (OnClassCondition)
+
+   RSocketSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.rsocket.server.RSocketServerCustomizer' (OnClassCondition)
+
+   ReactiveManagementWebSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration' (OnClassCondition)
+
+   ReactiveWebSecurityAutoConfiguration.SpringBootWebFluxSecurityConfiguration#denyAllAuthenticationManager:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.ReactiveAuthenticationManager,org.springframework.security.core.userdetails.ReactiveUserDetailsService,org.springframework.security.web.server.SecurityWebFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.core.userdetails.ReactiveUserDetailsService' reactiveUserDetailsService and found beans of type 'org.springframework.security.web.server.SecurityWebFilterChain' securityWebFilterChain (OnBeanCondition)
+
+   ReactiveWebServerConfiguration#forwardedHeaderTransformer:
+      Did not match:
+         - @ConditionalOnProperty (server.forward-headers-strategy=framework) did not find property 'server.forward-headers-strategy' (OnPropertyCondition)
+
+   SecurityAutoConfiguration.SecurityDataConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.data.repository.query.SecurityEvaluationContextExtension' (OnClassCondition)
+
+   SecurityFilterAutoConfiguration:
+      Did not match:
+         - not a servlet web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer', 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+
+   ServletWebSecurityAutoConfiguration:
+      Did not match:
+         - not a servlet web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.application.admin.enabled=true) did not find property 'spring.application.admin.enabled' (OnPropertyCondition)
+
+   TaskExecutorConfigurations.AsyncConfigurerWrapperConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.scheduling.annotation.AsyncConfigurer; SearchStrategy: all) did not find any beans of type org.springframework.scheduling.annotation.AsyncConfigurer (OnBeanCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder' simpleAsyncTaskExecutorBuilder (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutorVirtualThreads:
+      Did not match:
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+   TaskSchedulingAutoConfiguration#scheduledBeanLazyInitializationExcludeFilter:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.scheduling.config.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.scheduling.config.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   TaskSchedulingConfigurations.SimpleAsyncTaskSchedulerBuilderConfiguration#simpleAsyncTaskSchedulerBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder' simpleAsyncTaskSchedulerBuilder (OnBeanCondition)
+
+   TaskSchedulingConfigurations.TaskSchedulerConfiguration:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.scheduling.config.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.scheduling.config.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   TransactionAutoConfiguration.AspectJTransactionManagementConfiguration:
+      Did not match:
+         - @ConditionalOnBean did not find required type 'org.springframework.transaction.aspectj.AbstractTransactionAspect' (OnBeanCondition)
+         - @ConditionalOnBean (types: org.springframework.transaction.aspectj.AbstractTransactionAspect; SearchStrategy: all) did not find any beans of type org.springframework.transaction.aspectj.AbstractTransactionAspect (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=false) did not find property 'spring.aop.proxy-target-class' (OnPropertyCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - not a servlet web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+   WebFluxAutoConfiguration#hiddenHttpMethodFilter:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.webflux.hiddenmethod.filter.enabled=true) did not find property 'spring.webflux.hiddenmethod.filter.enabled' (OnPropertyCondition)
+
+   WebFluxAutoConfiguration.ProblemDetailsErrorHandlingConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.webflux.problemdetails.enabled=true) did not find property 'spring.webflux.problemdetails.enabled' (OnPropertyCondition)
+
+   WebFluxAutoConfiguration.ResourceChainCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnEnabledResourceChain did not find class org.webjars.WebJarVersionLocator (OnEnabledResourceChainCondition)
+
+   WebFluxHealthEndpointExtensionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.health.actuate.endpoint.HealthEndpoint' (OnClassCondition)
+
+   WebFluxHttpExchangesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean did not find required type 'org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository' (OnBeanCondition)
+
+   WebFluxMappingsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.condition.ConditionalOnAvailableEndpoint' (OnClassCondition)
+
+   WebFluxObservationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.micrometer.core.instrument.MeterRegistry' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+2026-02-17T12:43:02.466+05:30  INFO 12948 --- [toshi] [main] com.toshi.ToshiApplication               : Started ToshiApplication in 8.256 seconds (process running for 9.257)
+2026-02-17T12:43:02.470+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2026-02-17T12:43:02.478+05:30 DEBUG 12948 --- [toshi] [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-02-17T12:43:11.630+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] io.netty.buffer.AbstractByteBuf          : -Dio.netty.buffer.checkAccessible: true
+2026-02-17T12:43:11.631+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] io.netty.buffer.AbstractByteBuf          : -Dio.netty.buffer.checkBounds: true
+2026-02-17T12:43:11.633+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] i.n.util.ResourceLeakDetectorFactory     : Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@24961747
+2026-02-17T12:43:11.708+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-2] r.n.http.server.HttpServerOperations     : [ee87dedb, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61996] New http connection, requesting read
+2026-02-17T12:43:11.708+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] r.n.http.server.HttpServerOperations     : [91017d0f, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] New http connection, requesting read
+2026-02-17T12:43:11.709+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] r.netty.transport.TransportConfig        : [91017d0f, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpServerCodec), (reactor.left.httpTrafficHandler = reactor.netty.http.server.HttpTrafficHandler), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2026-02-17T12:43:11.709+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-2] r.netty.transport.TransportConfig        : [ee87dedb, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61996] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpServerCodec), (reactor.left.httpTrafficHandler = reactor.netty.http.server.HttpTrafficHandler), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2026-02-17T12:43:12.071+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] r.n.http.server.HttpServerOperations     : [91017d0f, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Increasing pending responses count: 1
+2026-02-17T12:43:12.122+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] reactor.netty.http.server.HttpServer     : [91017d0f-1, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Handler is being applied: org.springframework.http.server.reactive.ReactorHttpHandlerAdapter@b1ba8cd
+2026-02-17T12:43:12.176+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [91017d0f-1] HTTP POST "/api/payment/verify"
+2026-02-17T12:43:12.400+05:30 DEBUG 12948 --- [toshi] [parallel-2] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2026-02-17T12:43:12.442+05:30 DEBUG 12948 --- [toshi] [parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2026-02-17T12:43:12.451+05:30 DEBUG 12948 --- [toshi] [parallel-2] athPatternParserServerWebExchangeMatcher : Request 'POST /api/payment/verify' doesn't match 'POST /logout'
+2026-02-17T12:43:12.451+05:30 DEBUG 12948 --- [toshi] [parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : No matches found
+2026-02-17T12:43:12.467+05:30 DEBUG 12948 --- [toshi] [parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/api/payment/**', method=null}
+2026-02-17T12:43:12.469+05:30 DEBUG 12948 --- [toshi] [parallel-2] athPatternParserServerWebExchangeMatcher : Checking match of request : '/api/payment/verify'; against '/api/payment/**'
+2026-02-17T12:43:12.477+05:30 DEBUG 12948 --- [toshi] [parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : matched
+2026-02-17T12:43:12.480+05:30 DEBUG 12948 --- [toshi] [parallel-2] a.DelegatingReactiveAuthorizationManager : Checking authorization on '/api/payment/verify' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x000001a4de559108@3ffb23d
+2026-02-17T12:43:12.481+05:30 DEBUG 12948 --- [toshi] [parallel-2] o.s.s.w.s.a.AuthorizationWebFilter       : Authorization successful
+2026-02-17T12:43:12.502+05:30 DEBUG 12948 --- [toshi] [parallel-2] s.w.r.r.m.a.RequestMappingHandlerMapping : [91017d0f-1] Mapped to com.toshi.controller.PaymentController#verifyPayment(String, String, String)
+2026-02-17T12:43:12.606+05:30 DEBUG 12948 --- [toshi] [parallel-2] o.s.web.method.HandlerMethod             : [91017d0f-1] Could not resolve parameter [0] in public reactor.core.publisher.Mono<org.springframework.http.ResponseEntity<com.toshi.dto.ApiResponse<com.toshi.entity.Payment>>> com.toshi.controller.PaymentController.verifyPayment(java.lang.String,java.lang.String,java.lang.String): 400 BAD_REQUEST "Required query parameter 'orderId' is not present."
+2026-02-17T12:43:12.616+05:30 DEBUG 12948 --- [toshi] [parallel-2] s.w.r.r.m.a.RequestMappingHandlerAdapter : [91017d0f-1] Using @ExceptionHandler com.toshi.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2026-02-17T12:43:12.639+05:30 DEBUG 12948 --- [toshi] [parallel-2] .s.w.r.r.m.a.ResponseEntityResultHandler : [91017d0f-1] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2026-02-17T12:43:12.640+05:30 DEBUG 12948 --- [toshi] [parallel-2] .s.w.r.r.m.a.ResponseEntityResultHandler : [91017d0f-1] 0..1 [com.toshi.dto.ApiResponse<java.lang.Object>]
+2026-02-17T12:43:12.687+05:30 DEBUG 12948 --- [toshi] [parallel-2] o.s.http.codec.json.JacksonJsonEncoder   : [91017d0f-1] Encoding [com.toshi.dto.ApiResponse@303972ae]
+2026-02-17T12:43:12.942+05:30 DEBUG 12948 --- [toshi] [parallel-2] r.n.http.server.HttpServerOperations     : [91017d0f-1, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Last HTTP response frame
+2026-02-17T12:43:12.942+05:30 DEBUG 12948 --- [toshi] [parallel-2] r.n.http.server.HttpServerOperations     : [91017d0f-1, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Headers are not sent before onComplete().
+2026-02-17T12:43:12.946+05:30 DEBUG 12948 --- [toshi] [parallel-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [91017d0f-1] Completed 400 BAD_REQUEST
+2026-02-17T12:43:12.962+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] r.n.http.server.HttpServerOperations     : [91017d0f-1, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Decreasing pending responses count: 0
+2026-02-17T12:43:12.967+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] r.n.http.server.HttpServerOperations     : [91017d0f-1, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Last HTTP packet was sent, terminating the channel
+2026-02-17T12:43:12.968+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] r.netty.channel.ChannelOperations        : [91017d0f-1, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] [HttpServer] Channel inbound receiver cancelled (subscription disposed).
+2026-02-17T12:43:12.985+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] reactor.netty.channel.FluxReceive        : [91017d0f-1, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] [terminated=true, cancelled=true, pending=0, error=null]: dropping frame LAST_CONTENT(decodeResult: success, content: UnpooledSlicedByteBuf(ridx: 0, widx: 96, cap: 96/96, unwrapped: AdaptivePoolingAllocator$AdaptiveByteBuf(ridx: 368, widx: 368, cap: 2048)))
+2026-02-17T12:44:01.398+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] r.n.http.server.HttpServerOperations     : [91017d0f, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Increasing pending responses count: 1
+2026-02-17T12:44:01.399+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] reactor.netty.http.server.HttpServer     : [91017d0f-2, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Handler is being applied: org.springframework.http.server.reactive.ReactorHttpHandlerAdapter@b1ba8cd
+2026-02-17T12:44:01.399+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [91017d0f-2] HTTP POST "/api/payment/verify"
+2026-02-17T12:44:01.402+05:30 DEBUG 12948 --- [toshi] [parallel-3] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2026-02-17T12:44:01.402+05:30 DEBUG 12948 --- [toshi] [parallel-3] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2026-02-17T12:44:01.403+05:30 DEBUG 12948 --- [toshi] [parallel-3] athPatternParserServerWebExchangeMatcher : Request 'POST /api/payment/verify' doesn't match 'POST /logout'
+2026-02-17T12:44:01.404+05:30 DEBUG 12948 --- [toshi] [parallel-3] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : No matches found
+2026-02-17T12:44:01.406+05:30 DEBUG 12948 --- [toshi] [parallel-3] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/api/payment/**', method=null}
+2026-02-17T12:44:01.406+05:30 DEBUG 12948 --- [toshi] [parallel-3] athPatternParserServerWebExchangeMatcher : Checking match of request : '/api/payment/verify'; against '/api/payment/**'
+2026-02-17T12:44:01.406+05:30 DEBUG 12948 --- [toshi] [parallel-3] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : matched
+2026-02-17T12:44:01.406+05:30 DEBUG 12948 --- [toshi] [parallel-3] a.DelegatingReactiveAuthorizationManager : Checking authorization on '/api/payment/verify' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x000001a4de559108@3ffb23d
+2026-02-17T12:44:01.407+05:30 DEBUG 12948 --- [toshi] [parallel-3] o.s.s.w.s.a.AuthorizationWebFilter       : Authorization successful
+2026-02-17T12:44:01.407+05:30 DEBUG 12948 --- [toshi] [parallel-3] s.w.r.r.m.a.RequestMappingHandlerMapping : [91017d0f-2] Mapped to com.toshi.controller.PaymentController#verifyPayment(String, String, String)
+2026-02-17T12:44:01.410+05:30 DEBUG 12948 --- [toshi] [parallel-3] o.s.web.method.HandlerMethod             : [91017d0f-2] Could not resolve parameter [0] in public reactor.core.publisher.Mono<org.springframework.http.ResponseEntity<com.toshi.dto.ApiResponse<com.toshi.entity.Payment>>> com.toshi.controller.PaymentController.verifyPayment(java.lang.String,java.lang.String,java.lang.String): 400 BAD_REQUEST "Required query parameter 'orderId' is not present."
+2026-02-17T12:44:01.411+05:30 DEBUG 12948 --- [toshi] [parallel-3] s.w.r.r.m.a.RequestMappingHandlerAdapter : [91017d0f-2] Using @ExceptionHandler com.toshi.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2026-02-17T12:44:01.412+05:30 DEBUG 12948 --- [toshi] [parallel-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [91017d0f-2] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2026-02-17T12:44:01.413+05:30 DEBUG 12948 --- [toshi] [parallel-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [91017d0f-2] 0..1 [com.toshi.dto.ApiResponse<java.lang.Object>]
+2026-02-17T12:44:01.414+05:30 DEBUG 12948 --- [toshi] [parallel-3] o.s.http.codec.json.JacksonJsonEncoder   : [91017d0f-2] Encoding [com.toshi.dto.ApiResponse@8aa0dc4]
+2026-02-17T12:44:01.417+05:30 DEBUG 12948 --- [toshi] [parallel-3] r.n.http.server.HttpServerOperations     : [91017d0f-2, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Last HTTP response frame
+2026-02-17T12:44:01.417+05:30 DEBUG 12948 --- [toshi] [parallel-3] r.n.http.server.HttpServerOperations     : [91017d0f-2, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Headers are not sent before onComplete().
+2026-02-17T12:44:01.417+05:30 DEBUG 12948 --- [toshi] [parallel-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [91017d0f-2] Completed 400 BAD_REQUEST
+2026-02-17T12:44:01.419+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] r.n.http.server.HttpServerOperations     : [91017d0f-2, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Decreasing pending responses count: 0
+2026-02-17T12:44:01.419+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] r.n.http.server.HttpServerOperations     : [91017d0f-2, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] Last HTTP packet was sent, terminating the channel
+2026-02-17T12:44:01.419+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] r.netty.channel.ChannelOperations        : [91017d0f-2, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] [HttpServer] Channel inbound receiver cancelled (subscription disposed).
+2026-02-17T12:44:01.420+05:30 DEBUG 12948 --- [toshi] [reactor-http-nio-3] reactor.netty.channel.FluxReceive        : [91017d0f-2, L:/[0:0:0:0:0:0:0:1]:8083 - R:/[0:0:0:0:0:0:0:1]:61997] [terminated=true, cancelled=true, pending=0, error=null]: dropping frame LAST_CONTENT(decodeResult: success, content: UnpooledSlicedByteBuf(ridx: 0, widx: 96, cap: 96/96, unwrapped: AdaptivePoolingAllocator$AdaptiveByteBuf(ridx: 368, widx: 368, cap: 2048)))
+2026-02-17T12:46:47.841+05:30 DEBUG 12948 --- [toshi] [SIGINT handler] java.lang.Runtime                        : Runtime.exit() called with status: 130
+
+java.lang.Throwable: Runtime.exit(130)
+	at java.base/java.lang.Shutdown.logRuntimeExit(Shutdown.java:179) ~[na:na]
+	at java.base/java.lang.Shutdown.exit(Shutdown.java:160) ~[na:na]
+	at java.base/java.lang.Terminator$1.handle(Terminator.java:51) ~[na:na]
+	at java.base/jdk.internal.misc.Signal$1.run(Signal.java:218) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-02-17T12:46:47.854+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2026-02-17T12:46:47.854+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] onfigReactiveWebServerApplicationContext : Closing org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@319bc845, started on Tue Feb 17 12:42:55 IST 2026
+2026-02-17T12:46:47.857+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147482623
+2026-02-17T12:46:47.858+05:30  INFO 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.boot.reactor.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-17T12:46:47.859+05:30 DEBUG 12948 --- [toshi] [netty-shutdown] r.netty.transport.ServerTransport        : [c8f3f1f4, L:/[0:0:0:0:0:0:0:0]:8083] Server is about to be disposed with timeout: PT2562047H47M16.854775807S
+2026-02-17T12:46:47.862+05:30  INFO 12948 --- [toshi] [netty-shutdown] o.s.boot.reactor.netty.GracefulShutdown  : Graceful shutdown complete
+2026-02-17T12:46:47.862+05:30 DEBUG 12948 --- [toshi] [netty-shutdown] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerGracefulShutdown' completed its stop procedure
+2026-02-17T12:46:47.862+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147481599
+2026-02-17T12:46:47.863+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] r.netty.transport.ServerTransport        : [c8f3f1f4, L:/[0:0:0:0:0:0:0:0]:8083] Server has been disposed
+2026-02-17T12:46:47.863+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerStartStop' completed its stop procedure
+2026-02-17T12:46:47.863+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 1073741823
+2026-02-17T12:46:47.863+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'applicationTaskExecutor' completed its stop procedure
+2026-02-17T12:46:47.863+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2026-02-17T12:46:49.946+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'reactorResourceFactory' completed its stop procedure
+2026-02-17T12:46:49.946+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147483647
+2026-02-17T12:46:49.946+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'springBootLoggingLifecycle' completed its stop procedure
+2026-02-17T12:46:49.948+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Custom destroy method 'dispose' on bean with name 'connectionFactory' completed
+2026-02-17T12:46:49.948+05:30 DEBUG 12948 --- [toshi] [SpringApplicationShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

@@ -1,21 +1,20 @@
 
 package com.toshi.serviceImpl;
 
-import com.razorpay.Order;
 import com.razorpay.RazorpayClient;
-import com.razorpay.RazorpayException;
+
 import com.toshi.dto.PaymentRequestDto;
 import com.toshi.dto.PaymentResponseDto;
 import com.toshi.entity.Payment;
 import com.toshi.enums.PaymentStatus;
 import com.toshi.repository.PaymentRepository;
 import com.toshi.service.PaymentService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.HmacUtils;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
-
 @Service
 public class PaymentServiceImpl implements PaymentService {
 
@@ -25,6 +24,9 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Value("${razorpay.secret}")
     private String razorpaySecret;
+
+    private static final org.slf4j.Logger log =
+            org.slf4j.LoggerFactory.getLogger(PaymentServiceImpl.class);
 
     public PaymentServiceImpl(RazorpayClient razorpayClient, PaymentRepository paymentRepository) {
         this.razorpayClient = razorpayClient;
@@ -61,6 +63,9 @@ public class PaymentServiceImpl implements PaymentService {
     }
     // Verify Payment
     public Mono<Payment> verifyPayment(String orderId, String paymentId, String signature, String secret) {
+
+        log.info("OrderId: {}, PaymentId: {}, Signature: {}, Secret: {}",
+                orderId, paymentId, signature, secret);
         return paymentRepository.findByRazorpayOrderId(orderId)
                 .switchIfEmpty(Mono.error(new RuntimeException("Payment not found")))
                 .flatMap(payment -> {
@@ -79,6 +84,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     // Get Payment Status
     public Mono<Payment> getPaymentStatus(Long id) {
+        log.info("Fetching payment status for id={}", id);
         return paymentRepository.findById(id)
                 .switchIfEmpty(Mono.error(new RuntimeException("Payment not found")));
     }

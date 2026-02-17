@@ -7,7 +7,6 @@ import com.toshi.dto.PaymentResponseDto;
 import com.toshi.entity.Payment;
 import com.toshi.service.PaymentService;
 import jakarta.validation.Valid;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,13 +19,15 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/api/payment")
 @CrossOrigin
 @Validated
-@Slf4j
 public class PaymentController {
 
     private final PaymentService paymentService;
 
     @Value("${razorpay.secret}")
     private String razorpaySecret;
+
+    private static final org.slf4j.Logger log =
+            org.slf4j.LoggerFactory.getLogger(PaymentController.class);
 
     public PaymentController(PaymentService paymentService) {
         this.paymentService = paymentService;
@@ -39,7 +40,7 @@ public class PaymentController {
     public Mono<ResponseEntity<ApiResponse<PaymentResponseDto>>> createOrder(
             @Valid @RequestBody PaymentRequestDto dto) {
 
-      // log.info("Received create-order request: {}", dto);
+      log.info("Received create-order request: {}", dto);
 
         return paymentService.createOrder(dto)
                 .map(resp -> ResponseEntity.status(HttpStatus.CREATED)
@@ -82,7 +83,6 @@ public class PaymentController {
             @RequestParam String paymentId,
             @RequestParam String signature) {
 
-       // log.info("Verifying payment: orderId={}, paymentId={}", orderId, paymentId);
 
         return paymentService.verifyPayment(orderId, paymentId, signature, razorpaySecret)
                 .map(payment -> ResponseEntity.ok(
@@ -120,7 +120,7 @@ public class PaymentController {
      */
     @GetMapping("/status/{id}")
     public Mono<ResponseEntity<ApiResponse<Payment>>> getPaymentStatus(@PathVariable Long id) {
-      //  log.info("Fetching payment status for id={}", id);
+        log.info("Fetching payment status for id={}", id);
 
         return paymentService.getPaymentStatus(id)
                 .map(payment -> ResponseEntity.ok(
