@@ -9,8 +9,3 @@ sql:
   init:
     mode: never
 
-
-
-razorpay:
-  key: ${RAZORPAY_KEY}
-  secret: ${RAZORPAY_SECRET}

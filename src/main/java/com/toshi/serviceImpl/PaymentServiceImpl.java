@@ -15,6 +15,11 @@ import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
+
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import java.util.Base64;
+
 @Service
 public class PaymentServiceImpl implements PaymentService {
 
@@ -89,6 +94,46 @@ public class PaymentServiceImpl implements PaymentService {
                 .switchIfEmpty(Mono.error(new RuntimeException("Payment not found")));
     }
 
+
+    // 🔥 Webhook: Update Status
+    @Override
+    public Mono<Void> updateStatus(String orderId, String paymentId, String status) {
+
+        return paymentRepository.findByRazorpayOrderId(orderId)
+                .flatMap(payment -> {
+
+                    // 🔁 Idempotency
+                    if (payment.getStatus() == PaymentStatus.SUCCESS) {
+                        return Mono.empty();
+                    }
+
+                    payment.setRazorpayPaymentId(paymentId);
+
+                    if ("SUCCESS".equalsIgnoreCase(status)) {
+                        payment.setStatus(PaymentStatus.SUCCESS);
+                    } else {
+                        payment.setStatus(PaymentStatus.FAILED);
+                    }
+
+                    return paymentRepository.save(payment).then();
+                });
+    }
+
+    // 🔥 Webhook: Order Paid
+    @Override
+    public Mono<Void> markOrderPaid(String orderId) {
+
+        return paymentRepository.findByRazorpayOrderId(orderId)
+                .flatMap(payment -> {
+
+                    if (payment.getStatus() == PaymentStatus.SUCCESS) {
+                        return Mono.empty();
+                    }
+
+                    payment.setStatus(PaymentStatus.SUCCESS);
+                    return paymentRepository.save(payment).then();
+                });
+    }
 
 
 }
