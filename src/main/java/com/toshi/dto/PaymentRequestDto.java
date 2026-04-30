@@ -13,6 +13,17 @@ public class PaymentRequestDto {
     @NotBlank private String phone;
     @NotNull @Positive private Double amount;
 
+    @NotBlank private String currency;
+
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
     // getters and setters
     public String getFirstname() { return firstname; }
     public void setFirstname(String firstname) { this.firstname = firstname; }

@@ -16,9 +16,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
-import javax.crypto.Mac;
-import javax.crypto.spec.SecretKeySpec;
-import java.util.Base64;
+
 
 @Service
 public class PaymentServiceImpl implements PaymentService {
@@ -55,6 +53,7 @@ public class PaymentServiceImpl implements PaymentService {
                     payment.setEmail(dto.getEmail());
                     payment.setPhone(dto.getPhone());
                     payment.setAmount(dto.getAmount());
+                    payment.setCurrency(dto.getCurrency());
                     payment.setRazorpayOrderId(order.get("id"));
                     payment.setStatus(PaymentStatus.PENDING);
 
@@ -62,6 +61,8 @@ public class PaymentServiceImpl implements PaymentService {
                             .map(saved -> new PaymentResponseDto(
                                     saved.getId(),
                                     saved.getRazorpayOrderId(),
+                                    saved.getCurrency(),
+                                    saved.getAmount(),
                                     saved.getStatus().name()
                             ));
                 });

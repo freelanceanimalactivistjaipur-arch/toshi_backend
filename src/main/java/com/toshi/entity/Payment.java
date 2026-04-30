@@ -20,6 +20,8 @@ public class Payment {
     private String phone;
     private Double amount;
 
+    private String currency;
+
     private String razorpayOrderId;
     private String razorpayPaymentId;
     private String razorpaySignature;
@@ -57,5 +59,11 @@ public class Payment {
     public PaymentStatus getStatus() { return status; }
     public void setStatus(PaymentStatus status) { this.status = status; }
 
+    public String getCurrency() {
+        return currency;
+    }
 
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
 }
